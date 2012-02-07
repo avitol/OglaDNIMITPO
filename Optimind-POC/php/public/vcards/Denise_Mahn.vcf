@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:29
+FN:Denise Mahn
+N:Mahn;Denise;;;
+
+ADR;TYPE=home:;;3225 Shinn Avenue;Crafton;PA;15205;
+EMAIL;TYPE=internet,pref:DeniseJMahn@example.com
+TEL;TYPE=home,voice:724-494-5859
+BDAY:1969-4-6
+TZ:-0500
+END:VCARD

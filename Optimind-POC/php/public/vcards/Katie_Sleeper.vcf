@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:27
+FN:Katie Sleeper
+N:Sleeper;Katie;;;
+
+ADR;TYPE=home:;;2687 Chestnut Street;North Gulf Beach;FL;34642;
+EMAIL;TYPE=internet,pref:KatieJSleeper@example.com
+TEL;TYPE=home,voice:727-393-8933
+BDAY:1941-12-10
+TZ:-0500
+END:VCARD

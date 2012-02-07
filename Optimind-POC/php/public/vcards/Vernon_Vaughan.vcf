@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:56:37
+FN:Vernon Vaughan
+N:Vaughan;Vernon;;;
+
+ADR;TYPE=home:;;713 White Lane;Jeffersonville;GA;31044;
+EMAIL;TYPE=internet,pref:VernonAVaughan@example.com
+TEL;TYPE=home,voice:478-945-3009
+BDAY:1938-4-11
+TZ:-0500
+END:VCARD

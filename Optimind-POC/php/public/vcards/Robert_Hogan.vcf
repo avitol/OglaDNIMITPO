@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:57:57
+FN:Robert Hogan
+N:Hogan;Robert;;;
+
+ADR;TYPE=home:;;3310 Murphy Court;Minneapolis;MN;55415;
+EMAIL;TYPE=internet,pref:RobertCHogan@example.com
+TEL;TYPE=home,voice:952-217-5393
+BDAY:1986-10-27
+TZ:-0500
+END:VCARD

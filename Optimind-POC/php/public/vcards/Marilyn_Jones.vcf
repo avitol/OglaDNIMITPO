@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:56:31
+FN:Marilyn Jones
+N:Jones;Marilyn;;;
+
+ADR;TYPE=home:;;3116 Smith Street;Framingham;MA;01702;
+EMAIL;TYPE=internet,pref:MarilynMJones@example.com
+TEL;TYPE=home,voice:508-766-3152
+BDAY:1949-9-24
+TZ:-0500
+END:VCARD

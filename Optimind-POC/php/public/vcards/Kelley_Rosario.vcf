@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:58:59
+FN:Kelley Rosario
+N:Rosario;Kelley;;;
+
+ADR;TYPE=home:;;1900 Broaddus Avenue;Battle Creek;MI;49017;
+EMAIL;TYPE=internet,pref:KelleyLRosario@example.com
+TEL;TYPE=home,voice:269-969-0763
+BDAY:1949-8-6
+TZ:-0500
+END:VCARD

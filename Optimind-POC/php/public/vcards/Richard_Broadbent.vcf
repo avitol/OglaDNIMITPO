@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 04:00:06
+FN:Richard Broadbent
+N:Broadbent;Richard;;;
+
+ADR;TYPE=home:;;3759 Blue Spruce Lane;Towson;MD;21204;
+EMAIL;TYPE=internet,pref:RichardMBroadbent@example.com
+TEL;TYPE=home,voice:410-296-0649
+BDAY:1971-12-20
+TZ:-0500
+END:VCARD

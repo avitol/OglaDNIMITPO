@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:58:03
+FN:Cynthia Morgan
+N:Morgan;Cynthia;;;
+
+ADR;TYPE=home:;;3092 Mahlon Street;Sayreville;NJ;08872;
+EMAIL;TYPE=internet,pref:CynthiaVMorgan@example.com
+TEL;TYPE=home,voice:732-998-6231
+BDAY:1947-2-18
+TZ:-0500
+END:VCARD

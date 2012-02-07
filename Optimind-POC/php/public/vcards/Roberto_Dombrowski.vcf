@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:53:06
+FN:Roberto Dombrowski
+N:Dombrowski;Roberto;;;
+
+ADR;TYPE=home:;;3839 Ben Street;Albany;NY;12207;
+EMAIL;TYPE=internet,pref:RobertoLDombrowski@example.com
+TEL;TYPE=home,voice:518-256-1379
+BDAY:1945-9-5
+TZ:-0500
+END:VCARD

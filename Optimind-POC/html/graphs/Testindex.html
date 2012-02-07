@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="SHORTCUT ICON" href="../images/opt-logo.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Optimind - Dashboard</title>
+    <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:extralight,light,regular,bold"
+        media="screen" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption" media="screen"
+        rel="stylesheet" type="text/css">
+    <link href="../css/reset.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/grid.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/elfinder.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.ui.datatables.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.slidernav.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.fullcalendar.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/ui/default-ui/ui.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/ui/default-ui/portlet.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/ui/default-ui/jquery.ui.uniform.css" media="screen" rel="stylesheet"
+        type="text/css">
+    <link href="../css/ui/default-ui/colors/jquery.ui.colors.default.css" media="screen"
+        rel="stylesheet" type="text/css" class="uicolor">
+    <link href="../css/forms.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/prettify.css" media="screen" rel="stylesheet" type="text/css">
+    <!--[if lt IE 8]> <link href="../css/ie.css" media="screen" rel="stylesheet" type="text/css" ><![endif]-->
+    <!--[if lt IE 9]> <script type="text/javascript" src="../js/html5.js"></script><![endif]-->
+    <script type="text/javascript" src="js/external.js"></script>
+    <!--[if lt IE 9]> <script type="text/javascript" src="../js/selectivizr.js"></script><![endif]-->
+    <!--[if lt IE 8]> <script type="text/javascript" src="../js/ie.js"></script><![endif]-->
+    <script type="text/javascript">
+        $(function () {
+            var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+		];
+            $("#quick-search").autocomplete({
+                source: availableTags
+            });
+            function viewPort() {
+                var h = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+                var w = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+                return { width: w, height: h }
+            }
+
+        });
+
+        $(window).load(function () {
+            //Adapt iFrame width to its container width
+            $('iframe').width($('iframe').parent().width());
+
+            $("#loading").fadeOut(function () {
+                $(this).remove();
+                $('body').removeAttr('style');
+            });
+        });
+    </script>
+    <style type="text/css">
+        #container
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        
+        #content
+        {
+            width: 800px;
+            text-align: center;
+            margin-left: -400px;
+            height: 50px;
+            margin-top: -25px;
+            line-height: 50px;
+        }
+        
+        #content
+        {
+            font-family: "Helvetica" , "Arial" , sans-serif;
+            font-size: 18px;
+            color: black;
+            text-shadow: 0px 1px 0px white;
+        }
+        
+        #loadinggraphic
+        {
+            margin-right: 0.2em;
+            margin-bottom: -2px;
+        }
+        
+        #loading
+        {
+            background-color: #eeeeee;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+    </style>
+    <!-- LOADING SCRIPT END -->
+</head>
+<body style="overflow: hidden;">
+    <div id="loading">
+        <script type="text/javascript">
+            document.write("<div id='container'><p id='content'>" +
+                           "<img id='loadinggraphic' width='16' height='16' src='../images/ajax-loader.gif' /> " +
+                           "Loading...</p></div>");
+        </script>
+    </div>
+    <div id="wrapper" class="clearfix">
+        <header class="container_8 clearfix">
+            <div class="grid_8">
+                <h1>
+                    OptiMIND</h1>
+                <form class="fr">
+                <input id="quick-search" type="text" placeholder="Search..." />
+                </form>
+                <nav>
+                    <ul id="mainMenu" class="sf-menu clearfix">
+                        <li class="subMenu active"><a href="dashboardManuf.html" target="contentIFRAME">Manufacturer</a>
+                            <ul>
+                                <li><a href="dashboardManuf.html" target="contentIFRAME">Dashboard</a></li>
+                                <li><a href="Caroussel.html" target="contentIFRAME">View ALL</a></li>
+                            </ul>
+                        </li>
+                        <li class="subMenu"><a href="#">Dealer</a>
+                            <ul>
+                                <li><a href="dashboardDealer.html" target="contentIFRAME">Dashboard</a></li>
+                                <li><a href="Caroussel.html" target="contentIFRAME">View ALL</a></li>
+                            </ul>
+                        </li>
+                        <li class="subMenu"><a href="Maps.html" target="contentIFRAME">Mapping</a>
+                    </ul>
+                </nav>
+                <script type="text/javascript">
+                    $(function () {
+                        //Set active menu with appropriate class
+                        $("#mainMenu li").click(function () {
+                            $("li").removeClass("active");
+                            $(this).addClass("active")
+                            //Note!!!! the "s" in parents is important to navigate more than one level!!!.parents(".subMenu").addClass("active");
+                        });
+                    });
+                </script>
+            </div>
+        </header>
+        <div class="clear">
+        </div>
+        <section>
+            <div class="container_8 clearfix">
+                <iframe id="contentIFRAME" name="contentIFRAME" height="1024px" seamless></iframe>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript">
+
+        $(function () {
+
+            $('.isotope-container').isotope({ filter: $('input[name=dashboardview]:checked').val() });
+            $('input[name=dashboardview]').change(function () {
+                var base = this;
+                setTimeout(function () { $('.isotope-container').isotope({ filter: $(base).val() }); }, 500);
+            });
+
+            //Load "Overview" on page load
+            $("#contentIFRAME").attr("src", "Overview.html");
+        });
+    </script>
+    <footer>
+        <div id="footer-inner" class="container_8 clearfix">
+            <div class="grid_8">
+                <span class="fr"><a href="#">Documentation</a> | <a href="#">Feedback</a></span><a
+                    href="#">Details</a> | &copy; 2012. Optimis
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

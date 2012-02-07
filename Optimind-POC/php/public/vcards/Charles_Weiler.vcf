@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:58:48
+FN:Charles Weiler
+N:Weiler;Charles;;;
+
+ADR;TYPE=home:;;855 Boone Street;Corpus Christi;TX;78476;
+EMAIL;TYPE=internet,pref:CharlesCWeiler@example.com
+TEL;TYPE=home,voice:361-260-2300
+BDAY:1938-9-26
+TZ:-0500
+END:VCARD

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:55:05
+FN:Terry Robinson
+N:Robinson;Terry;;;
+
+ADR;TYPE=home:;;223 Bluff Street;Annapolis Junction;MD;20701;
+EMAIL;TYPE=internet,pref:TerryLRobinson@example.com
+TEL;TYPE=home,voice:301-787-2471
+BDAY:1950-7-18
+TZ:-0500
+END:VCARD

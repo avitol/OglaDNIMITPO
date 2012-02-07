@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:58:18
+FN:Luis Watson
+N:Watson;Luis;;;
+
+ADR;TYPE=home:;;1948 Zimmerman Lane;Los Angeles;CA;90013;
+EMAIL;TYPE=internet,pref:LuisKWatson@example.com
+TEL;TYPE=home,voice:213-446-4121
+BDAY:1944-12-18
+TZ:-0500
+END:VCARD

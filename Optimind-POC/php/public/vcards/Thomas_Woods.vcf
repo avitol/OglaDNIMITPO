@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:42
+FN:Thomas Woods
+N:Woods;Thomas;;;
+
+ADR;TYPE=home:;;2971 Hood Avenue;San Diego;CA;92111;
+EMAIL;TYPE=internet,pref:ThomasBWoods@example.com
+TEL;TYPE=home,voice:858-694-8532
+BDAY:1972-10-26
+TZ:-0500
+END:VCARD

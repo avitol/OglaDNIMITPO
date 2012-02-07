@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 05:48:17
+FN:Timothy Murphy
+N:Murphy;Timothy;;;
+
+ADR;TYPE=home:;;Piazza Rezzonico 6;Vinelz;;3234;
+EMAIL;TYPE=internet,pref:TimothyCMurphy@example.com
+TEL;TYPE=home,voice:032 793 33 50
+BDAY:1931-9-6
+TZ:-0500
+END:VCARD

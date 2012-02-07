@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:55:51
+FN:Joyce Olmos
+N:Olmos;Joyce;;;
+
+ADR;TYPE=home:;;1514 Poplar Avenue;San Diego;CA;92111;
+EMAIL;TYPE=internet,pref:JoyceJOlmos@example.com
+TEL;TYPE=home,voice:619-587-0702
+BDAY:1992-8-16
+TZ:-0500
+END:VCARD

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:34
+FN:Lorraine Watts
+N:Watts;Lorraine;;;
+
+ADR;TYPE=home:;;3478 Chestnut Street;Clearwater;FL;34621;
+EMAIL;TYPE=internet,pref:LorraineJWatts@example.com
+TEL;TYPE=home,voice:727-429-2981
+BDAY:1933-8-30
+TZ:-0500
+END:VCARD

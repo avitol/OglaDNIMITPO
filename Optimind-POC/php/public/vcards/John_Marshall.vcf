@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:52:58
+FN:John Marshall
+N:Marshall;John;;;
+
+ADR;TYPE=home:;;4496 Philadelphia Avenue;Salt Lake City;UT;84101;
+EMAIL;TYPE=internet,pref:JohnCMarshall@example.com
+TEL;TYPE=home,voice:801-316-1438
+BDAY:1950-6-1
+TZ:-0500
+END:VCARD

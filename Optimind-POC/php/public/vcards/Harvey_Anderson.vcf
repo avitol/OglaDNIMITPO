@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 05:50:04
+FN:Harvey Anderson
+N:Anderson;Harvey;;;
+
+ADR;TYPE=home:;;Vestre Bingsa industriveg 132;ÅLESUND;;6019;
+EMAIL;TYPE=internet,pref:HarveyAAnderson@example.com
+TEL;TYPE=home,voice:488 06 292
+BDAY:1930-7-31
+TZ:-0500
+END:VCARD

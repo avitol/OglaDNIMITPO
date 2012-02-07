@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:56:23
+FN:Milagros Webster
+N:Webster;Milagros;;;
+
+ADR;TYPE=home:;;57 Nutters Barn Lane;Ogden;IA;50212;
+EMAIL;TYPE=internet,pref:MilagrosJWebster@example.com
+TEL;TYPE=home,voice:515-881-5346
+BDAY:1987-2-9
+TZ:-0500
+END:VCARD

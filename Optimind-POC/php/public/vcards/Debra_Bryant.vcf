@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:52:41
+FN:Debra Bryant
+N:Bryant;Debra;;;
+
+ADR;TYPE=home:;;2221 Metz Lane;Cambridge;MA;02141;
+EMAIL;TYPE=internet,pref:DebraGBryant@example.com
+TEL;TYPE=home,voice:857-555-5592
+BDAY:1949-6-1
+TZ:-0500
+END:VCARD

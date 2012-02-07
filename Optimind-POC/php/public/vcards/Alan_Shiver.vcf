@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:03
+FN:Alan Shiver
+N:Shiver;Alan;;;
+
+ADR;TYPE=home:;;3968 Ben Street;East Lansing;MI;48823;
+EMAIL;TYPE=internet,pref:AlanMShiver@example.com
+TEL;TYPE=home,voice:517-938-3660
+BDAY:1929-6-6
+TZ:-0500
+END:VCARD

@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <title>Demo GPS plugin</title>
+<style>
+    #map {
+        width: 1024px;
+        height: 768px;
+        background-color: White;
+    }
+</style>
+    <script src="../js/jquery-1.6.2.min.js" type="text/javascript"></script>
+<script src="http://maps.google.com/maps?file=api&v=2&sensor=true&key=ABQIAAAAPGZoEqvWyRWzXKYrA6Uz7BTk_nVt1CIYc-XTNiZNDMCeDlR_uBSprXH05Zjy3b1rqcw_lfwXbaQ8GA" type="text/javascript"></script>
+    <script src="../js/gps/gps.jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $("#map").googleMap().load();
+
+    });
+</script>
+</head>
+<body onunload="GUnload()">
+    <div id="directions"></div>
+    <div id="map"></div>
+    
+    <form action="directions.php" method="post">
+        <p>
+        <b>From: </b><input id="start" type="text"  value="102 Rue Garibaldi Lyon 69007"/>
+        <b>To: </b><input id="end" type="text"   value="Paris"/>
+        </p>
+        <input name="submit" id="getdirections" type="submit" value="Get Directions" />
+    </form>
+    
+</body>
+</html>

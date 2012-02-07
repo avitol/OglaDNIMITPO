@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:53:27
+FN:Debra Lampe
+N:Lampe;Debra;;;
+
+ADR;TYPE=home:;;527 Arron Smith Drive;Honolulu;HI;96813;
+EMAIL;TYPE=internet,pref:DebraJLampe@example.com
+TEL;TYPE=home,voice:808-532-3661
+BDAY:1970-1-18
+TZ:-0500
+END:VCARD

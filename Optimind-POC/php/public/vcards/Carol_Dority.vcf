@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:52:26
+FN:Carol Dority
+N:Dority;Carol;;;
+
+ADR;TYPE=home:;;292 Rafe Lane;Greenwood;MS;38930;
+EMAIL;TYPE=internet,pref:CarolJDority@example.com
+TEL;TYPE=home,voice:662-646-6983
+BDAY:1984-1-11
+TZ:-0500
+END:VCARD

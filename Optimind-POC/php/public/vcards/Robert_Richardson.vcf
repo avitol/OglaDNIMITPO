@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:56:09
+FN:Robert Richardson
+N:Richardson;Robert;;;
+
+ADR;TYPE=home:;;2572 Eagle Street;Grayville;IL;62844;
+EMAIL;TYPE=internet,pref:RobertDRichardson@example.com
+TEL;TYPE=home,voice:618-375-7771
+BDAY:1962-11-25
+TZ:-0500
+END:VCARD

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:50:58
+FN:Earl Mortenson
+N:Mortenson;Earl;;;
+
+ADR;TYPE=home:;;4525 Quarry Drive;Ashford;AL;36312;
+EMAIL;TYPE=internet,pref:EarlEMortenson@example.com
+TEL;TYPE=home,voice:334-899-5921
+BDAY:1977-10-16
+TZ:-0500
+END:VCARD

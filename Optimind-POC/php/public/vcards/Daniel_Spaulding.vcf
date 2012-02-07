@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 05:47:07
+FN:Daniel Spaulding
+N:Spaulding;Daniel;;;
+
+ADR;TYPE=home:;;2953 Stiles Street;Pittsburgh;PA;15219;
+EMAIL;TYPE=internet,pref:DanielRSpaulding@example.com
+TEL;TYPE=home,voice:412-553-7139
+BDAY:1949-3-23
+TZ:-0500
+END:VCARD

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:55:30
+FN:Bertha Campos
+N:Campos;Bertha;;;
+
+ADR;TYPE=home:;;295 Pike Street;San Diego;CA;92111;
+EMAIL;TYPE=internet,pref:BerthaJCampos@example.com
+TEL;TYPE=home,voice:858-560-9226
+BDAY:1976-10-22
+TZ:-0500
+END:VCARD

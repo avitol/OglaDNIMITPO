@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:53:38
+FN:Michelle Tate
+N:Tate;Michelle;;;
+
+ADR;TYPE=home:;;1767 Lang Avenue;Wendover;UT;84083;
+EMAIL;TYPE=internet,pref:MichelleLTate@example.com
+TEL;TYPE=home,voice:435-999-7561
+BDAY:1962-4-16
+TZ:-0500
+END:VCARD

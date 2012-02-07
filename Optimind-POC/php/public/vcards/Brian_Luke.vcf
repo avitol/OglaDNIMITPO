@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:10
+FN:Brian Luke
+N:Luke;Brian;;;
+
+ADR;TYPE=home:;;4769 Honeysuckle Lane;Beaverton;WA;97006;
+EMAIL;TYPE=internet,pref:BrianRLuke@example.com
+TEL;TYPE=home,voice:360-567-7830
+BDAY:1942-9-3
+TZ:-0500
+END:VCARD

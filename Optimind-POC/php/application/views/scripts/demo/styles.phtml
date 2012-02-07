@@ -1,0 +1,401 @@
+                <section class="main-section grid_8">
+                    <nav class="collapsed">
+                        <a class="chevron" href="#">&raquo;</a>
+                        <ul>
+                            <li><a href="<?=$this->baseUrl('demo/wysiwyg')?>" class="navicon-folder-open">WYSIWYG</a></li>
+                            <li><a href="<?=$this->baseUrl('demo/forms')?>" class="navicon-id-card">Forms</a></li>
+                            <li><a href="<?=$this->baseUrl('demo/widgets')?>" class="navicon-window">Widgets</a></li>
+                            <li><a href="<?=$this->baseUrl('demo/tables')?>" class="navicon-table">Tables</a></li>
+                            <li class="current"><a href="<?=$this->baseUrl('demo/styles')?>" class="navicon-palette">Styles</a></li>
+                            <li><a href="<?=$this->baseUrl('demo/navicons')?>" class="navicon-photos">Nav Icons</a></li>
+                            <li><a href="<?=$this->baseUrl('demo/grid')?>" class="navicon-grid">Grid System</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Styles Section -->
+                    <div class="main-content">
+                        <header>
+                            <h2>Styles</h2>
+                        </header>
+                        <section class="container_6 clearfix">
+                            <div class="grid_3">
+                                <h3 class="ui-widget-header ui-corner-all">Buttons</h3>
+                                <button class="button">Standard Button</button>
+                                <button class="button ui-button-default">Default Button</button>
+                                
+                                <div class="buttonset leading">
+                                    <input type="radio" name="button-toggle" id="button-toggle-1" value="1" /><label for="button-toggle-1">Choice 1</label>
+                                    <input type="radio" name="button-toggle" id="button-toggle-2" value="2" /><label for="button-toggle-2">Choice 2</label>
+                                    <input type="radio" name="button-toggle" id="button-toggle-3" value="3" /><label for="button-toggle-3">Choice 3</label>
+                                </div>
+                                
+                                <div class="buttonset leading">
+                                    <input type="checkbox" name="button-toggle2" id="button-toggle2-1" value="1" /><label for="button-toggle2-1">B</label>
+                                    <input type="checkbox" name="button-toggle2" id="button-toggle2-2" value="2" /><label for="button-toggle2-2"><em>I</em></label>
+                                    <input type="checkbox" name="button-toggle2" id="button-toggle2-3" value="3" /><label for="button-toggle2-3">U</label>
+                                </div>
+                                
+                                <div class="leading">
+                                    <button class="button" data-icon-primary="ui-icon-locked" data-icon-only="true">Locked</button>
+                                    <button class="button" data-icon-primary="ui-icon-gear" data-icon-secondary="ui-icon-triangle-1-s" data-icon-only="true">Button with two icons</button>
+                                    <br />
+                                    <br />
+                                    <button class="button" data-icon-primary="ui-icon-locked">Button with icon on the left</button>
+                                    <button class="button" data-icon-primary="ui-icon-gear" data-icon-secondary="ui-icon-triangle-1-s">Button with two icons</button>
+                                </div>
+
+                                <ul class="pagination clearfix leading">
+                                    <li class="first"><a href="#">First</a></li>
+                                    <li class="prev"><a href="#">&laquo;</a></li>
+                                    <li class="page current"><a href="#">1</a></li>
+                                    <li class="page"><a href="#">2</a></li>
+                                    <li class="page"><a href="#">3</a></li>
+                                    <li class="page"><a href="#">4</a></li>
+                                    <li class="page"><a href="#">5</a></li>
+                                    <li class="next"><a href="#">&raquo;</a></li>
+                                    <li class="last"><a href="#">Last</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid_3">
+                                <h3 class="ui-widget-header ui-corner-all">Progress Bars</h3>
+                                <h4>Default Setup</h4>
+                                <div class="progress" data-value="10"></div>
+                                
+                                <h4>Value is shown</h4>
+                                <div class="progress" data-value="10" data-show-value="true"></div>
+                            </div>
+                            <div class="grid_6">
+                                <h3 class="ui-widget-header ui-corner-all leading">Framework Icons</h3>
+                                <ul class="action-buttons ui-widget ui-helper-clearfix">
+                                    
+                                    <li><a class="button" title=".ui-icon-carat-1-n" data-icon-primary="ui-icon-carat-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-1-ne" data-icon-primary="ui-icon-carat-1-ne" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-1-e" data-icon-primary="ui-icon-carat-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-carat-1-se" data-icon-primary="ui-icon-carat-1-se" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-1-s" data-icon-primary="ui-icon-carat-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-1-sw" data-icon-primary="ui-icon-carat-1-sw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-1-w" data-icon-primary="ui-icon-carat-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-1-nw" data-icon-primary="ui-icon-carat-1-nw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-2-n-s" data-icon-primary="ui-icon-carat-2-n-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-carat-2-e-w" data-icon-primary="ui-icon-carat-2-e-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-1-n" data-icon-primary="ui-icon-triangle-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-1-ne" data-icon-primary="ui-icon-triangle-1-ne" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-triangle-1-e" data-icon-primary="ui-icon-triangle-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-1-se" data-icon-primary="ui-icon-triangle-1-se" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-1-s" data-icon-primary="ui-icon-triangle-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-1-sw" data-icon-primary="ui-icon-triangle-1-sw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-1-w" data-icon-primary="ui-icon-triangle-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-1-nw" data-icon-primary="ui-icon-triangle-1-nw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-2-n-s" data-icon-primary="ui-icon-triangle-2-n-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-triangle-2-e-w" data-icon-primary="ui-icon-triangle-2-e-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-1-n" data-icon-primary="ui-icon-arrow-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-arrow-1-ne" data-icon-primary="ui-icon-arrow-1-ne" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-1-e" data-icon-primary="ui-icon-arrow-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-1-se" data-icon-primary="ui-icon-arrow-1-se" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-1-s" data-icon-primary="ui-icon-arrow-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-1-sw" data-icon-primary="ui-icon-arrow-1-sw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-1-w" data-icon-primary="ui-icon-arrow-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-1-nw" data-icon-primary="ui-icon-arrow-1-nw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-2-n-s" data-icon-primary="ui-icon-arrow-2-n-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-2-ne-sw" data-icon-primary="ui-icon-arrow-2-ne-sw" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-arrow-2-e-w" data-icon-primary="ui-icon-arrow-2-e-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-2-se-nw" data-icon-primary="ui-icon-arrow-2-se-nw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowstop-1-n" data-icon-primary="ui-icon-arrowstop-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowstop-1-e" data-icon-primary="ui-icon-arrowstop-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowstop-1-s" data-icon-primary="ui-icon-arrowstop-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowstop-1-w" data-icon-primary="ui-icon-arrowstop-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-n" data-icon-primary="ui-icon-arrowthick-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-ne" data-icon-primary="ui-icon-arrowthick-1-ne" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-e" data-icon-primary="ui-icon-arrowthick-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-se" data-icon-primary="ui-icon-arrowthick-1-se" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-s" data-icon-primary="ui-icon-arrowthick-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-sw" data-icon-primary="ui-icon-arrowthick-1-sw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-w" data-icon-primary="ui-icon-arrowthick-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-1-nw" data-icon-primary="ui-icon-arrowthick-1-nw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-2-n-s" data-icon-primary="ui-icon-arrowthick-2-n-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-2-ne-sw" data-icon-primary="ui-icon-arrowthick-2-ne-sw" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-2-e-w" data-icon-primary="ui-icon-arrowthick-2-e-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthick-2-se-nw" data-icon-primary="ui-icon-arrowthick-2-se-nw" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-arrowthickstop-1-n" data-icon-primary="ui-icon-arrowthickstop-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthickstop-1-e" data-icon-primary="ui-icon-arrowthickstop-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthickstop-1-s" data-icon-primary="ui-icon-arrowthickstop-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowthickstop-1-w" data-icon-primary="ui-icon-arrowthickstop-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowreturnthick-1-w" data-icon-primary="ui-icon-arrowreturnthick-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowreturnthick-1-n" data-icon-primary="ui-icon-arrowreturnthick-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowreturnthick-1-e" data-icon-primary="ui-icon-arrowreturnthick-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowreturnthick-1-s" data-icon-primary="ui-icon-arrowreturnthick-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowreturn-1-w" data-icon-primary="ui-icon-arrowreturn-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-arrowreturn-1-n" data-icon-primary="ui-icon-arrowreturn-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowreturn-1-e" data-icon-primary="ui-icon-arrowreturn-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowreturn-1-s" data-icon-primary="ui-icon-arrowreturn-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowrefresh-1-w" data-icon-primary="ui-icon-arrowrefresh-1-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowrefresh-1-n" data-icon-primary="ui-icon-arrowrefresh-1-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowrefresh-1-e" data-icon-primary="ui-icon-arrowrefresh-1-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrowrefresh-1-s" data-icon-primary="ui-icon-arrowrefresh-1-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-4" data-icon-primary="ui-icon-arrow-4" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-arrow-4-diag" data-icon-primary="ui-icon-arrow-4-diag" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-extlink" data-icon-primary="ui-icon-extlink" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-newwin" data-icon-primary="ui-icon-newwin" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-refresh" data-icon-primary="ui-icon-refresh" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-shuffle" data-icon-primary="ui-icon-shuffle" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-transfer-e-w" data-icon-primary="ui-icon-transfer-e-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-transferthick-e-w" data-icon-primary="ui-icon-transferthick-e-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-folder-collapsed" data-icon-primary="ui-icon-folder-collapsed" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-folder-open" data-icon-primary="ui-icon-folder-open" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-document" data-icon-primary="ui-icon-document" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-document-b" data-icon-primary="ui-icon-document-b" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-note" data-icon-primary="ui-icon-note" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-mail-closed" data-icon-primary="ui-icon-mail-closed" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-mail-open" data-icon-primary="ui-icon-mail-open" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-suitcase" data-icon-primary="ui-icon-suitcase" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-comment" data-icon-primary="ui-icon-comment" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-person" data-icon-primary="ui-icon-person" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-print" data-icon-primary="ui-icon-print" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-trash" data-icon-primary="ui-icon-trash" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-locked" data-icon-primary="ui-icon-locked" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-unlocked" data-icon-primary="ui-icon-unlocked" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-bookmark" data-icon-primary="ui-icon-bookmark" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-tag" data-icon-primary="ui-icon-tag" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-home" data-icon-primary="ui-icon-home" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-flag" data-icon-primary="ui-icon-flag" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-calculator" data-icon-primary="ui-icon-calculator" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-cart" data-icon-primary="ui-icon-cart" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-pencil" data-icon-primary="ui-icon-pencil" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-clock" data-icon-primary="ui-icon-clock" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-disk" data-icon-primary="ui-icon-disk" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-calendar" data-icon-primary="ui-icon-calendar" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-zoomin" data-icon-primary="ui-icon-zoomin" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-zoomout" data-icon-primary="ui-icon-zoomout" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-search" data-icon-primary="ui-icon-search" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-wrench" data-icon-primary="ui-icon-wrench" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-gear" data-icon-primary="ui-icon-gear" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-heart" data-icon-primary="ui-icon-heart" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-star" data-icon-primary="ui-icon-star" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-link" data-icon-primary="ui-icon-link" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-cancel" data-icon-primary="ui-icon-cancel" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-plus" data-icon-primary="ui-icon-plus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-plusthick" data-icon-primary="ui-icon-plusthick" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-minus" data-icon-primary="ui-icon-minus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-minusthick" data-icon-primary="ui-icon-minusthick" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-close" data-icon-primary="ui-icon-close" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-closethick" data-icon-primary="ui-icon-closethick" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-key" data-icon-primary="ui-icon-key" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-lightbulb" data-icon-primary="ui-icon-lightbulb" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-scissors" data-icon-primary="ui-icon-scissors" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-clipboard" data-icon-primary="ui-icon-clipboard" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-copy" data-icon-primary="ui-icon-copy" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-contact" data-icon-primary="ui-icon-contact" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-image" data-icon-primary="ui-icon-image" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-video" data-icon-primary="ui-icon-video" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-script" data-icon-primary="ui-icon-script" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-alert" data-icon-primary="ui-icon-alert" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-info" data-icon-primary="ui-icon-info" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-notice" data-icon-primary="ui-icon-notice" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-help" data-icon-primary="ui-icon-help" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-check" data-icon-primary="ui-icon-check" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-bullet" data-icon-primary="ui-icon-bullet" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-radio-off" data-icon-primary="ui-icon-radio-off" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-radio-on" data-icon-primary="ui-icon-radio-on" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-pin-w" data-icon-primary="ui-icon-pin-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-pin-s" data-icon-primary="ui-icon-pin-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-play" data-icon-primary="ui-icon-play" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-pause" data-icon-primary="ui-icon-pause" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-seek-next" data-icon-primary="ui-icon-seek-next" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-seek-prev" data-icon-primary="ui-icon-seek-prev" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-seek-end" data-icon-primary="ui-icon-seek-end" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-seek-first" data-icon-primary="ui-icon-seek-first" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-stop" data-icon-primary="ui-icon-stop" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-eject" data-icon-primary="ui-icon-eject" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-volume-off" data-icon-primary="ui-icon-volume-off" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-volume-on" data-icon-primary="ui-icon-volume-on" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-power" data-icon-primary="ui-icon-power" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-signal-diag" data-icon-primary="ui-icon-signal-diag" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-signal" data-icon-primary="ui-icon-signal" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-battery-0" data-icon-primary="ui-icon-battery-0" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-battery-1" data-icon-primary="ui-icon-battery-1" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-battery-2" data-icon-primary="ui-icon-battery-2" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-battery-3" data-icon-primary="ui-icon-battery-3" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-plus" data-icon-primary="ui-icon-circle-plus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-minus" data-icon-primary="ui-icon-circle-minus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-close" data-icon-primary="ui-icon-circle-close" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-circle-triangle-e" data-icon-primary="ui-icon-circle-triangle-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-triangle-s" data-icon-primary="ui-icon-circle-triangle-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-triangle-w" data-icon-primary="ui-icon-circle-triangle-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-triangle-n" data-icon-primary="ui-icon-circle-triangle-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-arrow-e" data-icon-primary="ui-icon-circle-arrow-e" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-arrow-s" data-icon-primary="ui-icon-circle-arrow-s" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-arrow-w" data-icon-primary="ui-icon-circle-arrow-w" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-arrow-n" data-icon-primary="ui-icon-circle-arrow-n" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-zoomin" data-icon-primary="ui-icon-circle-zoomin" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-circle-zoomout" data-icon-primary="ui-icon-circle-zoomout" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circle-check" data-icon-primary="ui-icon-circle-check" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circlesmall-plus" data-icon-primary="ui-icon-circlesmall-plus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circlesmall-minus" data-icon-primary="ui-icon-circlesmall-minus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-circlesmall-close" data-icon-primary="ui-icon-circlesmall-close" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-squaresmall-plus" data-icon-primary="ui-icon-squaresmall-plus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-squaresmall-minus" data-icon-primary="ui-icon-squaresmall-minus" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-squaresmall-close" data-icon-primary="ui-icon-squaresmall-close" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-grip-dotted-vertical" data-icon-primary="ui-icon-grip-dotted-vertical" data-icon-only="true">&nbsp;</a></li>
+                                    
+                                    <li><a class="button" title=".ui-icon-grip-dotted-horizontal" data-icon-primary="ui-icon-grip-dotted-horizontal" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-grip-solid-vertical" data-icon-primary="ui-icon-grip-solid-vertical" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-grip-solid-horizontal" data-icon-primary="ui-icon-grip-solid-horizontal" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-gripsmall-diagonal-se" data-icon-primary="ui-icon-gripsmall-diagonal-se" data-icon-only="true">&nbsp;</a></li>
+                                    <li><a class="button" title=".ui-icon-grip-diagonal-se" data-icon-primary="ui-icon-grip-diagonal-se" data-icon-only="true">&nbsp;</a></li>
+                                </ul>
+
+                                <h3 class="ui-widget-header ui-corner-all leading">Notifications</h3>
+                                
+                                <div class="ui-widget message closeable">
+                                    <div class="ui-state-highlight ui-corner-all"> 
+                                        <p>
+                                            <span class="ui-icon ui-icon-info"></span>
+                                            <strong>Hey!</strong> Sample ui-state-highlight style.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="ui-widget message closeable">
+                                    <div class="ui-state-success ui-corner-all"> 
+                                        <p>
+                                            <span class="ui-icon ui-icon-circle-check"></span>
+                                            <strong>SUCCESS!</strong> Sample ui-state-success style.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="ui-widget message closeable">
+                                    <div class="ui-state-error ui-corner-all"> 
+                                        <p>
+                                            <span class="ui-icon ui-icon-alert"></span> 
+                                            <strong>Alert:</strong> Sample ui-state-error style.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <p>You can combine any of the jQuery Framework UI Icons with these notification styles</p>
+                                
+                                <!-- Datepicker --> 
+                                <h3 class="ui-widget-header ui-corner-all leading">Datepicker</h3> 
+                                <div id="datepicker"></div>
+                                <script>$(function(){$('#datepicker').datepicker().children().show();});</script>
+
+                                <h3 class="ui-widget-header ui-corner-all leading">Text Styles</h3>
+
+                                <h1>Heading 1</h1>
+                                <h2>Heading 2</h2>
+                                <h3>Heading 3</h3>
+                                <h4>Heading 4</h4>
+                                <h5>Heading 5</h5>
+                                <h6>Heading 6</h6>
+                                <hr />
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="grid_2">
+                                <dl>
+                                    <dt class="code">&lt;a&gt;</dt>
+                                    <dd><a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a></dd>
+                                    <dt class="code">&lt;abbr&gt;</dt>
+                                    <dd><abbr title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</abbr></dd>
+                                    <dt class="code">&lt;code&gt;</dt>
+                                    <dd><code>Lorem ipsum dolor sit amet</code></dd>
+                                </dl>
+                            </div>
+                            <div class="grid_2">
+                                <dl>
+                                    <dt class="code">&lt;em&gt;</dt>
+                                    <dd><em>Lorem ipsum dolor sit amet</em></dd>
+                                    <dt class="code">&lt;del&gt;</dt>
+                                    <dd><del>Lorem ipsum dolor sit amet</del></dd>
+                                    <dt class="code">&lt;mark&gt;</dt>
+                                    <dd><mark>Lorem ipsum dolor sit amet</mark></dd>
+                                </dl>
+                            </div>
+                            <div class="grid_2">
+                                <dl>
+                                    <dt class="code">&lt;small&gt;</dt>
+                                    <dd><small>Lorem ipsum dolor sit amet</small></dd>
+                                    <dt class="code">&lt;strong&gt;</dt>
+                                    <dd><strong>Lorem ipsum dolor sit amet</strong></dd>
+                                </dl>
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="grid_6">
+                                <hr />
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="grid_2">
+                                <div class="code">&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;</div>
+                                <dl>
+                                    <dt>Lorem ipsum</dt>
+                                    <dd>Lorem ipsum dolor sit amet.</dd>
+                                    <dt>Lorem ipsum</dt>
+                                    <dd>Lorem ipsum dolor sit amet.</dd>
+                                    <dt>Lorem ipsum</dt>
+                                    <dd>Lorem ipsum dolor sit amet.</dd>
+                                </dl>
+                            </div>
+                            <div class="grid_2">
+                                <div class="code">&lt;ol&gt;&lt;li&gt;</div>
+                                <ol class="nostyle">
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet
+                                                <ol>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="grid_2">
+                                <div class="code">&lt;ul&gt;&lt;li&gt;</div>
+                                <ul class="nostyle">
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet
+                                                <ul>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                    <li>Lorem ipsum dolor sit amet</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- End Styles Section -->
+
+                </section>
+

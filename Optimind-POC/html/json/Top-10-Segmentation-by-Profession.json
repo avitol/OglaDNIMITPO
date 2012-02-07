@@ -1,0 +1,40 @@
+﻿{"series":
+[
+{
+ "name": "VN",
+"data": [
+22370,
+9610,
+1996,
+1463,
+775,
+752,
+613,
+598,
+543,
+505
+]
+},
+{
+ "name": "VD",
+"data": [
+3120,
+2075,
+543,
+189,
+347,
+185,
+116,
+148,
+182,
+95
+]
+}
+
+],
+"categories": ["Unknown", "Autres", "Cadres d'entreprise", "Professions libérales et assimilés  ", "Ouvriers qualifiés", "Artisans", "Anciens employés et ouvriers", "Employés administratifs d'entreprise", "Employés de commerce", "Chefs d'entreprise de 10 salariés ou plus"],
+
+ "title": {
+        "text": "Top 10 segmentation by profession"
+    }
+}

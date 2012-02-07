@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:55:45
+FN:Rosa Camire
+N:Camire;Rosa;;;
+
+ADR;TYPE=home:;;346 Hillhaven Drive;Los Angeles;CA;90029;
+EMAIL;TYPE=internet,pref:RosaRCamire@example.com
+TEL;TYPE=home,voice:323-913-5693
+BDAY:1972-8-30
+TZ:-0500
+END:VCARD

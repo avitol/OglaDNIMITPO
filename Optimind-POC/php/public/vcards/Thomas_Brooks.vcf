@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:36
+FN:Thomas Brooks
+N:Brooks;Thomas;;;
+
+ADR;TYPE=home:;;2635 Linda Street;Fort Washington;PA;19034;
+EMAIL;TYPE=internet,pref:ThomasMBrooks@example.com
+TEL;TYPE=home,voice:267-897-2113
+BDAY:1956-4-11
+TZ:-0500
+END:VCARD

@@ -1,0 +1,157 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highstock Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+
+	$.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
+		// Create the chart
+		window.chart = new Highcharts.StockChart({
+			chart : {
+				renderTo : 'container'
+			},
+
+			rangeSelector : {
+				selected : 5
+			},
+
+			title : {
+				text : 'Sales by Month and Objectives'
+			},
+subtitle: {
+    text: '',
+    x: -20
+},
+			series : [{
+				name : 'SMO',
+				data: 
+[
+
+
+[1230768000000,39],
+
+///* Feb 2009 */
+[1233532800000,47],
+
+///* Mar 2009 */
+[1235952000000,61],
+
+///* Apr 2009 */
+[1238544000000,176],
+
+///* May 2009 */
+[1241136000000,187],
+
+///* Jun 2009 */
+[1243814400000,62],
+
+///*/ Jul 2009 */
+[1246406400000,85],
+
+///* Aug 2009 */
+[1249257600000,125],
+
+///* Sep 2009 */
+[1251763200000,115],
+
+///* Oct 2009 */
+[1254355200000,178],
+
+///* Nov 2009 */
+[1257120000000,198],
+
+///* Dec 2009 */
+[1259625600000,100],
+
+///* Jan 2010 */
+[1262304000000,47],
+
+///* Feb 2010 */
+[1264982400000,121],
+
+///* Mar 2010 */
+[1267401600000,184],
+
+///* Apr 2010 */
+[1270080000000,178],
+
+///* May 2010 */
+[1272844800000,34],
+
+///* Jun 2010 */
+[1275350400000,56],
+
+///* Jul 2010 */
+[1277942400000,100],
+
+///* Aug 2010 */
+[1280707200000,168],
+
+///* Sep 2010 */
+[1283299200000,55],
+
+///* Oct 2010 */
+[1285891200000,120],
+
+///* Nov 2010 */
+[1288569600000,162],
+
+///* Dec 2010 */
+[1291161600000,92],
+
+///* Jan 2011 */
+[1294012800000,73],
+
+///* Feb 2011 */
+[1296518400000,189],
+
+///* Mar 2011 */
+[1298937600000,29],
+
+///* Apr 2011 */
+[1301616000000,37],
+
+///* May 2011 */
+[1304294400000,170],
+
+///* Jun 2011 */
+[1306886400000,60],
+
+///* Jul 2011 */
+[1309478400000,77],
+
+///* Aug 2011 */
+[1312156800000,174],
+
+///* Sep 2011 */
+[1314835200000,100],
+
+///* Oct 2011 */
+[1317600000000,39],
+
+///* Nov 2011 */
+[1320105600000,196],
+
+
+],
+tooltip: {
+					yDecimals: 2
+				}
+			}]
+		});
+	});
+
+});
+
+		</script>
+</head>
+<body>
+    <script src="../Highstock-1.1.2/js/highstock.js" type="text/javascript"></script>
+    <script src="../Highstock-1.1.2/js/modules/exporting.js" type="text/javascript"></script>
+    <div id="container" style="height: 500px; min-width: 500px">
+    </div>
+</body>
+</html>

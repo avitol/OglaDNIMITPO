@@ -1,0 +1,422 @@
+<script type="text/javascript"> 
+$(document).ready(function(){
+    $('#slider').slidernav();
+
+    $('.isotope-contacts').isotope({
+        layoutMode: 'cellsByRow',
+        cellsByRow : {
+            columnWidth : 286
+        },
+        getSortData : {
+            fullname : function ( $elem ) {
+                return $elem.find('.fullname').text();
+            },
+            name : function ( $elem ) {
+                return $elem.find('.name').text();
+            },
+            bday : function ( $elem ) {
+                return $elem.find('.bday').text();
+            }
+        },
+        filter: $('input[name=index]:checked').val()
+    });
+    
+    $('#isotope-contacts-filter input[name="index"]').change(function(){
+        var base = this;
+        setTimeout(function(){$('.isotope-contacts').isotope({ filter: $(base).val() });},500);
+    });
+    $('#isotope-contacts-filter input[name="sort"]').change(function(){
+        var base = this;
+        setTimeout(function(){$('.isotope-contacts').isotope({ sortBy: $(base).val() });},500);
+    });
+
+});
+</script> 
+
+                <section class="main-section grid_8">
+                    <nav class="collapsed">
+                        <a class="chevron" href="#">&raquo;</a>
+                        <ul>
+                            <li><a href="<?=$this->baseUrl('dashboard')?>" class="navicon-house">Overview</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/activity')?>" class="navicon-ekg">Activity</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/files')?>" class="navicon-cabinet">File Manager</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/calendar')?>" class="navicon-calendar">Calendar</a></li>
+                            <li class="current"><a href="<?=$this->baseUrl('dashboard/contacts')?>#" class="navicon-id-card">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="main-content">
+                        <header>
+                            <ul class="action-buttons clearfix">
+                                <li><a href="<?=$this->baseUrl('account')?>" class="button" data-icon-primary="ui-icon-wrench" data-icon-only="true">Options</a></li>
+                                <li><a href="<?=$this->baseUrl('documentation/index.html')?>" class="button help" rel="#overlay" data-icon-primary="ui-icon-help" data-icon-only="true">Help</a></li>
+                            </ul>
+                            <h2>
+                                Contacts
+                            </h2>
+                        </header>
+                        <section class="container_6 clearfix">                           
+                            <div class="grid_6">
+                                <div class="portlet">
+                                    <header>
+                                        <h2>Sortable Contacts</h2>
+                                    </header>
+                                    <form id="isotope-contacts-filter" class="ui-widget-header ui-state-default clearfix">
+                                        <span class="buttonset" id="isotope-contacts-index">
+                                            <input type="radio" name="index" id="index-a" value=".index-a" checked="checked"><label for="index-a">A</label>
+                                            <input type="radio" name="index" id="index-b" value=".index-b"><label for="index-b">B</label>
+                                            <input type="radio" name="index" id="index-c" value=".index-c"><label for="index-c">C</label>
+                                            <input type="radio" name="index" id="index-d" value=".index-d"><label for="index-d">D</label>
+                                            <input type="radio" name="index" id="index-e" value=".index-e"><label for="index-e">E</label>
+                                            <input type="radio" name="index" id="index-f" value=".index-f"><label for="index-f">F</label>
+                                            <input type="radio" name="index" id="index-g" value=".index-g"><label for="index-g">G</label>
+                                            <input type="radio" name="index" id="index-h" value=".index-h"><label for="index-h">H</label>
+                                            <input type="radio" name="index" id="index-i" value=".index-i"><label for="index-i">I</label>
+                                            <input type="radio" name="index" id="index-j" value=".index-j"><label for="index-j">J</label>
+                                            <input type="radio" name="index" id="index-k" value=".index-k"><label for="index-k">K</label>
+                                            <input type="radio" name="index" id="index-l" value=".index-l"><label for="index-l">L</label>
+                                            <input type="radio" name="index" id="index-m" value=".index-m"><label for="index-m">M</label>
+                                            <input type="radio" name="index" id="index-n" value=".index-n"><label for="index-n">N</label>
+                                            <input type="radio" name="index" id="index-o" value=".index-o"><label for="index-o">O</label>
+                                            <input type="radio" name="index" id="index-p" value=".index-p"><label for="index-p">P</label>
+                                            <input type="radio" name="index" id="index-q" value=".index-q"><label for="index-q">Q</label>
+                                            <input type="radio" name="index" id="index-r" value=".index-r"><label for="index-r">R</label>
+                                            <input type="radio" name="index" id="index-s" value=".index-s"><label for="index-s">S</label>
+                                            <input type="radio" name="index" id="index-t" value=".index-t"><label for="index-t">T</label>
+                                            <input type="radio" name="index" id="index-u" value=".index-u"><label for="index-u">U</label>
+                                            <input type="radio" name="index" id="index-v" value=".index-v"><label for="index-v">V</label>
+                                            <input type="radio" name="index" id="index-w" value=".index-w"><label for="index-w">W</label>
+                                            <input type="radio" name="index" id="index-x" value=".index-x"><label for="index-x">X</label>
+                                            <input type="radio" name="index" id="index-y" value=".index-y"><label for="index-y">Y</label>
+                                            <input type="radio" name="index" id="index-z" value=".index-z"><label for="index-z">Z</label>
+                                            <input type="radio" name="index" id="index-all" value="*"><label for="index-all">All</label>
+                                        </span>
+                                        <hr />
+                                        <span class="buttonset" id="isotope-contacts-sort">
+                                            <input type="radio" name="sort" id="sort-firstname" value="fullname" checked="checked"><label for="sort-firstname">First Name</label>      
+                                            <input type="radio" name="sort" id="sort-lastname" value="name"><label for="sort-lastname">Last Name</label>      
+                                            <input type="radio" name="sort" id="sort-bday" value="bday"><label for="sort-bday">Birthday</label>
+                                        </span>
+                                    </form>
+                                    <section>
+                                        <ul class="isotope-contacts clearfix">
+                                        <?php foreach($this->contacts as $contact):?>
+                                            <li class="button-blue ui-corner-all index-<?=strtolower(substr($contact[0]['N'][0]['value'][0][0], 0, 1))?>" data-id="<?=md5($contact[0]['FN'][0]['value'][0][0].$contact[0]['EMAIL'][0]['value'][0][0])?>">
+                                                <div class="photo"><div></div></div>
+                                                <div class="fullname"><?php echo $contact[0]['FN'][0]['value'][0][0];?></div>
+                                                <div class="name"><?php echo $contact[0]['N'][0]['value'][0][0];?>, <?php echo $contact[0]['N'][0]['value'][1][0];?></div>
+                                                <div class="city">City: <?php echo $contact[0]['ADR'][0]['value'][3][0];?></div>
+                                                <div class="email">Email: <?php echo $contact[0]['EMAIL'][0]['value'][0][0];?></div>
+                                                <div class="bday">Birthday: <?php echo $contact[0]['BDAY'][0]['value'][0][0];?></div>
+                                            </li>
+                                        <?php endforeach;?>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                            
+                            <div class="grid_6 leading">
+                                <div class="grid_2 alpha">
+                                    <div id="slider">
+                                        <a class="prev"><span class="arrow"></span></a>
+                                        <div class="scrollable">
+                                            <ul class="items">
+                                                <li id="a" class="item"><a name="a" class="title">A</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Adam</a></li> 
+                                                        <li><a href="#">Alex</a></li> 
+                                                        <li><a href="#">Ali</a></li> 
+                                                        <li><a href="#">Apple</a></li> 
+                                                        <li><a href="#">Arthur</a></li> 
+                                                        <li><a href="#">Ashley</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="b" class="item"><a name="b" class="title">B</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Barry</a></li> 
+                                                        <li><a href="#">Becky</a></li> 
+                                                        <li><a href="#">Biff</a></li> 
+                                                        <li><a href="#">Billy</a></li> 
+                                                        <li><a href="#">Bozarking</a></li> 
+                                                        <li><a href="#">Bryan</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="c" class="item"><a name="c" class="title">c</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Calista</a></li> 
+                                                        <li><a href="#">Cathy</a></li> 
+                                                        <li><a href="#">Chris</a></li> 
+                                                        <li><a href="#">Cinderella</a></li> 
+                                                        <li><a href="#">Corky</a></li> 
+                                                        <li><a href="#">Cypher</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="d" class="item"><a name="d" class="title">d</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="e" class="item"><a name="e" class="title">E</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Barry</a></li> 
+                                                        <li><a href="#">Becky</a></li> 
+                                                        <li><a href="#">Biff</a></li> 
+                                                        <li><a href="#">Billy</a></li> 
+                                                        <li><a href="#">Bozarking</a></li> 
+                                                        <li><a href="#">Bryan</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="f" class="item"><a name="f" class="title">f</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Calista</a></li> 
+                                                        <li><a href="#">Cathy</a></li> 
+                                                        <li><a href="#">Chris</a></li> 
+                                                        <li><a href="#">Cinderella</a></li> 
+                                                        <li><a href="#">Corky</a></li> 
+                                                        <li><a href="#">Cypher</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="g" class="item"><a name="g" class="title">g</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="h" class="item"><a name="h" class="title">h</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Barry</a></li> 
+                                                        <li><a href="#">Becky</a></li> 
+                                                        <li><a href="#">Biff</a></li> 
+                                                        <li><a href="#">Billy</a></li> 
+                                                        <li><a href="#">Bozarking</a></li> 
+                                                        <li><a href="#">Bryan</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="i" class="item"><a name="i" class="title">i</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Calista</a></li> 
+                                                        <li><a href="#">Cathy</a></li> 
+                                                        <li><a href="#">Chris</a></li> 
+                                                        <li><a href="#">Cinderella</a></li> 
+                                                        <li><a href="#">Corky</a></li> 
+                                                        <li><a href="#">Cypher</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="j" class="item"><a name="j" class="title">j</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="k" class="item"><a name="k" class="title">k</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Barry</a></li> 
+                                                        <li><a href="#">Becky</a></li> 
+                                                        <li><a href="#">Biff</a></li> 
+                                                        <li><a href="#">Billy</a></li> 
+                                                        <li><a href="#">Bozarking</a></li> 
+                                                        <li><a href="#">Bryan</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="l" class="item"><a name="l" class="title">l</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Calista</a></li> 
+                                                        <li><a href="#">Cathy</a></li> 
+                                                        <li><a href="#">Chris</a></li> 
+                                                        <li><a href="#">Cinderella</a></li> 
+                                                        <li><a href="#">Corky</a></li> 
+                                                        <li><a href="#">Cypher</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="m" class="item"><a name="m" class="title">m</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="n" class="item"><a name="n" class="title">n</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="o" class="item"><a name="o" class="title">o</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="p" class="item"><a name="p" class="title">p</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Barry</a></li> 
+                                                        <li><a href="#">Becky</a></li> 
+                                                        <li><a href="#">Biff</a></li> 
+                                                        <li><a href="#">Billy</a></li> 
+                                                        <li><a href="#">Bozarking</a></li> 
+                                                        <li><a href="#">Bryan</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="q" class="item"><a name="q" class="title">q</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Calista</a></li> 
+                                                        <li><a href="#">Cathy</a></li> 
+                                                        <li><a href="#">Chris</a></li> 
+                                                        <li><a href="#">Cinderella</a></li> 
+                                                        <li><a href="#">Corky</a></li> 
+                                                        <li><a href="#">Cypher</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="r" class="item"><a name="r" class="title">r</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="s" class="item"><a name="s" class="title">s</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Barry</a></li> 
+                                                        <li><a href="#">Becky</a></li> 
+                                                        <li><a href="#">Biff</a></li> 
+                                                        <li><a href="#">Billy</a></li> 
+                                                        <li><a href="#">Bozarking</a></li> 
+                                                        <li><a href="#">Bryan</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="t" class="item"><a name="t" class="title">t</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Calista</a></li> 
+                                                        <li><a href="#">Cathy</a></li> 
+                                                        <li><a href="#">Chris</a></li> 
+                                                        <li><a href="#">Cinderella</a></li> 
+                                                        <li><a href="#">Corky</a></li> 
+                                                        <li><a href="#">Cypher</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="u" class="item"><a name="u" class="title">u</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="v" class="item"><a name="v" class="title">v</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Barry</a></li> 
+                                                        <li><a href="#">Becky</a></li> 
+                                                        <li><a href="#">Biff</a></li> 
+                                                        <li><a href="#">Billy</a></li> 
+                                                        <li><a href="#">Bozarking</a></li> 
+                                                        <li><a href="#">Bryan</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="w" class="item"><a name="w" class="title">w</a> 
+                                                    <ul> 
+                                                        <li><a href="#">Calista</a></li> 
+                                                        <li><a href="#">Cathy</a></li> 
+                                                        <li><a href="#">Chris</a></li> 
+                                                        <li><a href="#">Cinderella</a></li> 
+                                                        <li><a href="#">Corky</a></li> 
+                                                        <li><a href="#">Cypher</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="x" class="item"><a name="x" class="title">x</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="y" class="item"><a name="y" class="title">y</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                                <li id="z" class="item"><a name="z" class="title">z</a> 
+                                                    <ul> 
+                                                        <li><a href="#">damien</a></li> 
+                                                        <li><a href="#">danny</a></li> 
+                                                        <li><a href="#">denver</a></li> 
+                                                        <li><a href="#">devon</a></li> 
+                                                        <li><a href="#">doug</a></li> 
+                                                        <li><a href="#">dustin</a></li> 
+                                                    </ul> 
+                                                </li> 
+                                            </ul> 
+                                        </div>
+                                        <a class="next"><span class="arrow"></span></a>
+                                    </div>
+                                </div>
+                                    <div class="grid_4 omega">
+                                    <h3>A Better Apple Style Slider</h3>
+                                    Add vertical sliding content using an index navigation bar with smooth scrolling animation. Inspired by the iPhone contacts application, this widget is used mainly for alphabetical contact listings, but other applications are possible.
+                                    
+                                    <h3 class="leading">Basic Usage</h3>
+                                    <h4>HTML</h4>
+                                    <pre class="prettyprint linenums lang-html">
+&lt;div id=&quot;slider&quot;&gt;
+    &lt;a class=&quot;prev&quot;&gt;&lt;span class=&quot;arrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;div class=&quot;scrollable&quot;&gt;
+        &lt;ul class=&quot;items&quot;&gt;
+            &lt;li id=&quot;a&quot; class=&quot;item&quot;&gt;&lt;a name=&quot;a&quot; class=&quot;title&quot;&gt;A&lt;/a&gt; 
+                &lt;ul&gt; 
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Adam&lt;/a&gt;&lt;/li&gt; 
+                &lt;/ul&gt; 
+            &lt;/li&gt; 
+            &lt;li id=&quot;a&quot; class=&quot;item&quot;&gt;&lt;a name=&quot;a&quot; class=&quot;title&quot;&gt;B&lt;/a&gt; 
+                &lt;ul&gt; 
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Bryan&lt;/a&gt;&lt;/li&gt; 
+                &lt;/ul&gt; 
+            &lt;/li&gt; 
+        &lt;/ul&gt; 
+    &lt;/div&gt;
+    &lt;a class=&quot;next&quot;&gt;&lt;span class=&quot;arrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+                                    <h4>JavaScript</h4>
+                                    <pre class="prettyprint linenums lang-js">$('#slider').slidernav();</pre>
+                                </div>
+                            </div>
+ 
+                        </section>
+                    </div>
+
+                </section>

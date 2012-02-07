@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:43
+FN:Joyce Carter
+N:Carter;Joyce;;;
+
+ADR;TYPE=home:;;2765 Lonely Oak Drive;Mobile;AL;36602;
+EMAIL;TYPE=internet,pref:JoyceJCarter@example.com
+TEL;TYPE=home,voice:251-664-9625
+BDAY:1962-2-19
+TZ:-0500
+END:VCARD

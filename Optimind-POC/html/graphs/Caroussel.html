@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style type="text/css">
+        img
+        {
+            border-style: solid;
+            border-width: 2px;
+            border-color: #000;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/slimbox2.css" media="screen" />
+    <script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+    <script type="text/JavaScript" src="../js/slimbox2.js"></script>
+    <script type="text/javascript" src="../js/cloud-carousel.1.0.5.min.js"></script>
+    <script type="text/javascript" src="../js/highslide/highslide-full.packed.js"></script>
+    <script type="text/javascript" src="../js/highslide/highslide.config.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/highslide/highslide.css" />
+    <script type="text/javascript">
+        $(function () {
+            $('body').width($('body').parent().width());
+            $('body').height($(window).height());
+            $('#optCarousel').width($('#optCarousel').parent().width())
+                .height($(window).height());
+
+            // Initialize carousel on the container elements specified, in this case, "optCarousel".
+            $("#optCarousel").CloudCarousel(
+		{
+		    minScale: 0.4,     //Default=0.5.	The minimum scale applied to the furthest item.
+		    //The item at the front has a scale of 1. To make items in the distance one quarter of the size, minScale would be 0.25.
+		    reflHeight: 70,     //Default=0.	Height of the auto-reflection in pixels, assuming applied to the item at the front.
+		    //The reflection will scale automatically. A value of 0 means that no auto-reflection will appear.
+		    reflGap: 3,         //Default=0.	Amount of vertical space in pixels between image and reflection, assuming applied to the item at the front. Gap will scale automatically.
+		    reflOpacity: 0.4,   //Default=0.5.	Specifies how transparent the reflection is. 0 is invisible, 1 is totally opaque.
+		    xRadius: 450,      	//Default=(Width of container / 2.3).	Half-width of the circle that items travel around.	
+		    yRadius: 400,      	//Default = (Height of container / 6).	Half-height of the circle that items travel around
+		    //By playing around with this value, you can alter the amount of 'tilt'.
+		    xPos: 480,          //	Horizontal position of the circle center relative to the container. You would normally set this to half the width of the container.
+		    yPos: 250,          //	Vertical position of the circle center relative to the container. You would normally set this to around half the height of container.
+		    buttonLeft: $("#left-but"),   //Default=null.	A reference to the element that will serve as the 'rotate left' button. The button doesn't have to be within the container.
+		    buttonRight: $("#right-but"),  //Default=null.	A reference to the element that will serve as the 'rotate right' button. The button doesn't have to be within the container.
+		    titleBox: $("#title-text"),    //Default=null.	A reference to the element that will display an image's title attribute when hovered over. This element does not have to be within the container.
+		    altBox: $("#alt-text"),         //Default=null.	A reference to the element that will display an image's alt attribute when hovered over. This element does not have to be within the container.	null
+		    FPS: 30,        	            //Default=30. This is the approximate frame rate of the carousel in frames per second.
+		    //The higher the number, the faster and smoother the carousel movement will appear.
+		    //However, frame rates that are too high can make the user's browser feel sluggish, especially if they have an under powered machine.
+		    // The default setting of 30 is a good trade-off between speed and performance.
+		    speed: 0.2, //Default=0.2.	This value represents the speed at which the carousel rotates between items.
+		    // Good values are around 0.1 ~ 0.3. A value of one will instantly move from one item to the next without any rotation animation.
+		    // Values should be greater than zero and less than one.
+		    autoRotate: 'no',   // Default='no'.Turn on auto-rotation of the carousel using either 'left' or 'right' as the value.
+		    //The carousel will rotate between items automatically. The auto-rotation stops when the user hovers over the carousel area, and starts again when the mouse is moved off.	'no'
+		    autoRotateDelay: 1500, //Default=1500. Delay in milliseconds between each rotation in auto-rotate mode. A minimum value of 1000 (i.e. one second) is recommended.
+		    mouseWheel: true,   //Default=false
+		    bringToFront: true  //Default=false
+		});
+        });
+ 
+    </script>
+    <script type="text/javascript">
+        hs.graphicsDir = '../js/highslide/graphics/';
+        hs.outlineType = 'rounded-white';
+        hs.wrapperClassName = 'draggable-header';
+        hs.minWidth = 850;
+        hs.allowMultipleInstances = false;
+        hs.align = 'center';
+        //hs.blockRightClick = true;
+        hs.dimmingOpacity = 0.75;
+        hs.dimmingDuration = 100;
+    </script>
+</head>
+<body style="margin: 0 auto;">
+    <div id="optCarousel" style="background: #494242; overflow: scroll;">
+        <a href="Lost-Opp-by-Engaged-Actions.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Lost-Opp-by-Engaged-Actions.PNG" alt="Lost-Opp-by-Engaged-Actions"
+                title="Lost-Opp-by-Engaged-Actions" />
+        </a><a href="Lost-Opportunities-by-Channel.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Lost-Opportunities-by-Channel.PNG"
+                alt="Lost-Opportunities-by-Channel" title="Lost-Opportunities-by-Channel" />
+        </a><a href="Lost-Opportunities-by-Status.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Lost-Opportunities-by-Status.PNG" alt="Lost-Opportunities-by-Status"
+                title="Lost-Opportunities-by-Status" />
+        </a><a href="Reason-of-Lost-Opportunities.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Reason-of-Lost-Opportunities.PNG" alt="Reason-of-Lost-Opportunities"
+                title="Reason-of-Lost-Opportunities" />
+        </a><a href="Sales-by-Sector.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Sales-by-Sector.PNG" alt="Sales-by-Sector"
+                title="Sales-by-Sector" />
+        </a><a href="Sales-by-Vendor.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Sales-by-Vendor.PNG" alt="Sales-by-Vendor"
+                title="Sales-by-Vendor" />
+        </a><a href="Sales-by-Month-Objectives.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Sales-by-Month-Objectives.PNG" alt="Sales-by-Month-Objectives"
+                title="Sales-by-Month-Objectives" />
+        </a><a href="Top-10-Segmentation-by-Profession.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Top-10-Segmentation-by-Profession.PNG"
+                alt="Top-10-Segmentation-by-Profession" title="Top-10-Segmentation-by-Profession" />
+        </a><a href="Avg-Open-Time-by-Opp-Status.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Avg-Open-Time-by-Opp-Status.PNG" alt="Avg-Open-Time-by-Opp-Status"
+                title="Avg-Open-Time-by-Opp-Status" />
+        </a><a href="Sales-by-Sector.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Sales-by-Sector.PNG" alt="Sales-by-Sector"
+                title="Sales-by-Sector" />
+        </a><a href="Sales-by-Month-Objectives.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Sales-by-Month-Objectives.PNG" alt="Sales-by-Month-Objectives"
+                title="Sales-by-Month-Objectives" />
+        </a><a href="Top-10-Segmentation-by-Profession.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Top-10-Segmentation-by-Profession.PNG"
+                alt="Top-10-Segmentation-by-Profession" title="Top-10-Segmentation-by-Profession" />
+        </a><a href="Avg-Open-Time-by-Opp-Status.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Avg-Open-Time-by-Opp-Status.PNG" alt="Avg-Open-Time-by-Opp-Status"
+                title="Avg-Open-Time-by-Opp-Status" />
+        </a><a href="Sales-by-Sector.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Sales-by-Sector.PNG" alt="Sales-by-Sector"
+                title="Sales-by-Sector" />
+        </a><a href="Sales-by-Month-Objectives.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Sales-by-Month-Objectives.PNG" alt="Sales-by-Month-Objectives"
+                title="Sales-by-Month-Objectives" />
+        </a><a href="Top-10-Segmentation-by-Profession.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Top-10-Segmentation-by-Profession.PNG"
+                alt="Top-10-Segmentation-by-Profession" title="Top-10-Segmentation-by-Profession" />
+        </a><a href="Avg-Open-Time-by-Opp-Status.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <img class="cloudcarousel" src="images/graphs/Avg-Open-Time-by-Opp-Status.PNG" alt="Avg-Open-Time-by-Opp-Status"
+                title="Avg-Open-Time-by-Opp-Status" />
+        </a>
+    </div>
+</body>
+</html>

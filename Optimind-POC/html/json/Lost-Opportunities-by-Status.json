@@ -1,0 +1,76 @@
+﻿{
+    "series": [
+        {
+            "name": "F OPP - Nombre",
+            "data": [
+                7314,
+                2604,
+                708,
+                819,
+                591,
+                4058,
+                545
+            ]
+        },
+        {
+            "name": "OPP Nombre Offre - Moyenne",
+            "data": [
+                1.51,
+                1.75,
+                1.78,
+                1.6,
+                1.67,
+                1.74,
+                1.52
+            ]
+        },
+        {
+            "name": "F Essai - Nombre",
+            "data": [
+                3081,
+                1215,
+                284,
+                352,
+                253,
+                1943,
+                249
+            ]
+        },
+        {
+            "name": "OPP Nombre Essai - %",
+            "data": [
+                42.12,
+                46.66,
+                40.11,
+                40.98,
+                42.81,
+                47.88,
+                45.69
+            ]
+        },
+        {
+            "name": "OPP Duree Ouverture - Moyenne",
+            "data": [
+                62.64,
+                33.77,
+                34.98,
+                35.89,
+                35.99,
+                53.02,
+                32.57
+            ]
+        }
+    ],
+    "categories": [
+        "Autre",
+        "Concurrence",
+        "Concurrence intra marque",
+        "Non finançable",
+        "Remise commerciale",
+        "Report d'intention",
+        "Reprise VO"
+    ],
+    "title": {
+        "text": "Lost Opportunities By status"
+    }
+}

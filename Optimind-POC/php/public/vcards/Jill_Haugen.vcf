@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:18
+FN:Jill Haugen
+N:Haugen;Jill;;;
+
+ADR;TYPE=home:;;4535 Gregory Lane;Louisville;KY;40202;
+EMAIL;TYPE=internet,pref:JillJHaugen@example.com
+TEL;TYPE=home,voice:502-589-1405
+BDAY:1984-12-13
+TZ:-0500
+END:VCARD

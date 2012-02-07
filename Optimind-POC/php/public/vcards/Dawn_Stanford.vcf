@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:58:53
+FN:Dawn Stanford
+N:Stanford;Dawn;;;
+
+ADR;TYPE=home:;;1168 Lynn Ogden Lane;Vidor;TX;77662;
+EMAIL;TYPE=internet,pref:DawnMStanford@example.com
+TEL;TYPE=home,voice:409-926-6205
+BDAY:1953-8-10
+TZ:-0500
+END:VCARD

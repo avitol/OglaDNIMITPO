@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:53:31
+FN:Carlton Vannoy
+N:Vannoy;Carlton;;;
+
+ADR;TYPE=home:;;2035 Camel Back Road;Fort Smith;OK;72908;
+EMAIL;TYPE=internet,pref:CarltonKVannoy@example.com
+TEL;TYPE=home,voice:918-626-3687
+BDAY:1966-10-23
+TZ:-0500
+END:VCARD

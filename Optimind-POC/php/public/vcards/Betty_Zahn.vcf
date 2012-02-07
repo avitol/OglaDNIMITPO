@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 06:06:31
+FN:Betty Zahn
+N:Zahn;Betty;;;
+
+ADR;TYPE=home:;;3105 Tenmile;Newport News;VA;23608;
+EMAIL;TYPE=internet,pref:BettyCZahn@example.com
+TEL;TYPE=home,voice:757-898-7928
+BDAY:1926-9-14
+TZ:-0500
+END:VCARD

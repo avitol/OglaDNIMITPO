@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highcharts Example</title>
+    <!-- 1. Add these JavaScript inclusions in the head of your page -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="../Highcharts-2.1.9/js/highcharts.js" type="text/javascript"></script>
+    <!-- 1a) Optional: add a theme file -->
+    <!--
+			<script type="text/javascript" src="../js/themes/gray.js"></script>
+		-->
+    <!-- 1b) Optional: the exporting module -->
+    <script src="../Highstock-1.1.2/js/themes/gray.js" type="text/javascript"></script>
+    <script src="../Highcharts-2.1.9/js/modules/exporting.js" type="text/javascript"></script>
+    <!-- 2. Add the JavaScript to initialize the chart on document ready -->
+    <script type="text/javascript">
+
+        var chart;
+        $(document).ready(function () {
+
+            $.getJSON('../json/Lost-Opportunities-by-Status.json', function (data) {
+                var index = 0;
+                var i = 0;
+               
+                if (data.series == undefined || data.categories == undefined || data.title == undefined) {
+                    alert("The file don't good");
+                }
+                for (i; i < data.series.length; i++) {
+                    $('#select').append("<option value='" + i + "'>" + data.series[i].name + "</option>");
+
+                };
+                chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'container',
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: true
+                    },
+                    title: {
+                        text: data.title.text
+                    },
+                    subtitle: {
+                        text: $("select option:selected")[0].text,
+                        x: -20
+                    },
+                    tooltip: {
+                        formatter: function () {
+
+                            if ($("select option:selected")[0].value == 3) {
+                                return '<b>' + this.point.name + '</b>: ' + this.y + '%';
+                            }
+                            else {
+                                return '<b>' + this.point.name + '</b>: ' + this.y
+                            }
+                        }
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                color: '#f8f6f6',
+                                connectorColor: '#f8f6f6',
+                                formatter: function () {
+
+                                    if ($("select option:selected")[0].value == 3) {
+                                        return '<b>' + this.point.name + '</b>: ' + this.y + '%';
+                                    }
+                                    else {
+                                        return '<b>' + this.point.name + '</b>: ' + this.y
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //                    series: [{
+                    //                        type: 'pie',
+                    //                        data: data.series[index].data,
+                    //                        name: data.series[index].name
+                    //                    }]
+
+                });
+                SetData();
+                function SetData() {
+                    chart.addSeries({
+                        type: 'pie',
+                        name: data.series[index].name,
+                        data: []
+                    });
+                    var i = 0;
+                    var dataPoint, namePoint;
+                    var plot_all = [];
+                    for (i; i < data.series[index].data.length; i++) {
+                        dataPoint = data.series[index].data[i];
+                        namePoint = data.categories[i];
+                        plot_all.push([namePoint, dataPoint]);
+                       // chart.series[0].addPoint([namePoint, dataPoint]);
+
+                    };
+                    chart.series[0].setData(plot_all);
+                }
+                $('#select').change(function () {
+                    index = $("select option:selected")[0].value;
+                    chart.series[0].remove();
+                    SetData()
+
+                    chart.setTitle(null, { text: $("select option:selected")[0].text })
+                });
+
+
+
+
+
+
+            });
+        });	
+		</script>
+</head>
+<body>
+    <header style="width: 800px; margin-left: auto; margin-right: auto;">
+        <div style="width: 200px; margin: 0 auto;">
+            <select id="select">
+            </select>
+        </div>
+        <div id="container" style="height: 400px;">
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<?phpinterface VD_Filemanager_ElFinder_Interface_Logger {	public function log($cmd, $ok, $context, $err='', $errorData = array());}

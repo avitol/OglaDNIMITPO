@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:55:36
+FN:Candice Kinsey
+N:Kinsey;Candice;;;
+
+ADR;TYPE=home:;;67 Bruce Street;Saint Louis;MO;63108;
+EMAIL;TYPE=internet,pref:CandiceHKinsey@example.com
+TEL;TYPE=home,voice:314-286-3380
+BDAY:1934-1-6
+TZ:-0500
+END:VCARD

@@ -1,0 +1,202 @@
+<script type='text/javascript'>
+
+
+
+	$(document).ready(function() {
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+        var eventtitle = $( "#event-title" )
+        var estart, eend, eallDay;
+
+		var calendar = $('#calendar').fullCalendar({
+            theme: true,
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+            selectable: true,
+			selectHelper: true,
+			select: function(start, end, allDay) {
+                estart=start;
+                eend=end;
+                eallDay=allDay;
+                $("#create-event-form").dialog("open");
+			},
+			editable: true,
+			events: [
+				{
+
+					title: 'All Day Event',
+
+					start: new Date(y, m, 1)
+
+				},
+
+				{
+
+					title: 'Long Event',
+
+					start: new Date(y, m, d-5),
+
+					end: new Date(y, m, d-2)
+
+				},
+
+				{
+
+					id: 999,
+
+					title: 'Repeating Event',
+
+					start: new Date(y, m, d-3, 16, 0),
+
+					allDay: false
+
+				},
+
+				{
+
+					id: 999,
+
+					title: 'Repeating Event',
+
+					start: new Date(y, m, d+4, 16, 0),
+
+					allDay: false
+
+				},
+
+				{
+
+					title: 'Meeting',
+
+					start: new Date(y, m, d, 10, 30),
+
+					allDay: false
+
+				},
+
+				{
+
+					title: 'Lunch',
+
+					start: new Date(y, m, d, 12, 0),
+
+					end: new Date(y, m, d, 14, 0),
+
+					allDay: false
+
+				},
+
+				{
+
+					title: 'Birthday Party',
+
+					start: new Date(y, m, d+1, 19, 0),
+
+					end: new Date(y, m, d+1, 22, 30),
+
+					allDay: false
+
+				},
+
+				{
+
+					title: 'Click for Google',
+
+					start: new Date(y, m, 28),
+
+					end: new Date(y, m, 29),
+
+					url: 'http://google.com/'
+
+				}
+
+			]
+
+		});
+        
+        // increase the default animation speed to exaggerate the effect
+        $.fx.speeds._default = 1000;
+		$( "#create-event-form" ).dialog({
+			autoOpen: false,
+			height: 128,
+			width: 350,
+			modal: true,
+            resizable: false,
+            hide: 'fade',
+            show: 'fade',
+			buttons: {
+				"Create Event": function() {
+					var bValid = true;
+					eventtitle.removeClass( "ui-state-error" );
+
+					bValid = bValid && eventtitle.val() != '';
+
+					if ( bValid ) {
+                        var title = eventtitle.val();
+                        calendar.fullCalendar('renderEvent',
+                            {
+                                title: title,
+                                start: estart,
+                                end: eend,
+                                allDay: eallDay
+                            },
+                            true // make the event "stick"
+                        );
+
+                        calendar.fullCalendar('unselect');
+						$( this ).dialog( "close" );
+					}
+				},
+				Cancel: function() {
+					$( this ).dialog( "close" );
+				}
+			},
+            close: function() {
+                eventtitle.val("").removeClass( "ui-state-error" );
+                estart=eend=eallDay=null;
+            }
+		});
+	});
+
+
+
+</script>
+
+                <section class="main-section grid_8">
+                    <nav class="collapsed">
+                        <a class="chevron" href="#">&raquo;</a>
+                        <ul>
+                            <li><a href="<?=$this->baseUrl('dashboard')?>" class="navicon-house">Overview</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/activity')?>" class="navicon-ekg">Activity</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/files')?>" class="navicon-cabinet">File Manager</a></li>
+                            <li class="current"><a href="<?=$this->baseUrl('dashboard/calendar')?>" class="navicon-calendar">Calendar</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/contacts')?>#" class="navicon-id-card">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="main-content">
+                        <header>
+                            <ul class="action-buttons clearfix">
+                                <li><a href="<?=$this->baseUrl('account')?>" class="button" data-icon-primary="ui-icon-wrench" data-icon-only="true">Options</a></li>
+                                <li><a href="<?=$this->baseUrl('documentation/index.html')?>" class="button help" rel="#overlay" data-icon-primary="ui-icon-help" data-icon-only="true">Help</a></li>
+                            </ul>
+                            <h2>
+                                Calendar
+                            </h2>
+                        </header>
+                        <section class="container_6 clearfix">
+                            <div id='calendar' class="grid_6"></div>
+                        </section>
+                    </div>
+
+                </section>
+
+<div id="create-event-form" title="Create new event">
+    <label for="event-title">Event Title </label>
+    <input type="text" name="event-title" id="event-title" style="width: 255px;" />
+</div>

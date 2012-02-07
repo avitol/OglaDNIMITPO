@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 05:52:25
+FN:Ambrogino Iadanza
+N:Iadanza;Ambrogino;;;
+
+ADR;TYPE=home:;;Haugveien 178;BODØ;;8010;
+EMAIL;TYPE=internet,pref:AmbroginoIadanza@example.com
+TEL;TYPE=home,voice:453 54 858
+BDAY:1973-8-23
+TZ:-0500
+END:VCARD

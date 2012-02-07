@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:52:49
+FN:James Grubbs
+N:Grubbs;James;;;
+
+ADR;TYPE=home:;;3533 Centennial Farm Road;Brunsville;IA;51008;
+EMAIL;TYPE=internet,pref:JamesPGrubbs@example.com
+TEL;TYPE=home,voice:712-533-7992
+BDAY:1938-11-3
+TZ:-0500
+END:VCARD

@@ -1,0 +1,441 @@
+<script>
+$(document).ready(function(){
+    $('.isotope-container').isotope({ filter: $('input[name=dashboardview]:checked').val() });
+    $('input[name=dashboardview]').change(function(){
+        var base = this;
+        setTimeout(function(){$('.isotope-container').isotope({ filter: $(base).val() });},500);
+    });
+});
+</script>
+                <section class="main-section grid_8">
+                    <nav class="collapsed">
+                        <a class="chevron" href="#">&raquo;</a>
+                        <ul>
+                            <li class="current"><a href="<?=$this->baseUrl('dashboard')?>" class="navicon-house">Overview</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/activity')?>" class="navicon-ekg">Activity</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/files')?>" class="navicon-cabinet">File Manager</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/calendar')?>" class="navicon-calendar">Calendar</a></li>
+                            <li><a href="<?=$this->baseUrl('dashboard/contacts')?>#" class="navicon-id-card">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="main-content">
+                        <header>
+                            <ul class="action-buttons clearfix">
+                                <li><a href="<?=$this->baseUrl('account')?>" class="button" data-icon-primary="ui-icon-wrench" data-icon-only="true">Options</a></li>
+                                <li><a href="<?=$this->baseUrl('documentation/index.html')?>" class="button help" rel="#overlay" data-icon-primary="ui-icon-help" data-icon-only="true">Help</a></li>
+                            </ul>
+                            <h2>
+                                Overview
+                            </h2>
+                        </header>
+                        <section class="container_6 clearfix">
+                        
+                            <div class="grid_6">
+                                <div class="ui-widget message info closeable">
+                                    <div class="ui-state-highlight ui-corner-all"> 
+                                        <p>
+                                            <span class="ui-icon ui-icon-info"></span>
+                                            This is a sortable dashboard example.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid_6 leading">
+                                <fieldset class="fieldset-buttons ui-corner-all">
+                                    <legend class="buttonset-legend">
+                                        <span id="dashboardview-filter" class="buttonset">
+                                            <input type="radio" name="dashboardview" id="dashboardview-orders" value=".dash-order" checked /><label for="dashboardview-orders">Orders</label>
+                                            <input type="radio" name="dashboardview" id="dashboardview-statistics" value=".dash-stat" /><label for="dashboardview-statistics">Statistics</label>
+                                            <input type="radio" name="dashboardview" id="dashboardview-tickets" value=".dash-ticket" /><label for="dashboardview-tickets">Tickets</label>
+                                            <input type="radio" name="dashboardview" id="dashboardview-alerts" value=".dash-alert" /><label for="dashboardview-alerts">Alerts</label>
+                                            <input type="radio" name="dashboardview" id="dashboardview-todo" value=".dash-todo" /><label for="dashboardview-todo">Todo</label>
+                                            <input type="radio" name="dashboardview" id="dashboardview-all" value="*" /><label for="dashboardview-all">All</label>
+                                        </span>
+                                    </legend>
+                                    <ul class="isotope-widgets isotope-container">
+                                        <li class="dash-order">
+                                            <a class="button-gray ui-corner-all" href="#">
+                                                <strong>20</strong>
+                                                <span>Orders Today</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-order">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>20</strong>
+                                                <span>Pending Today</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-order">
+                                            <a class="button-green ui-corner-all" href="#">
+                                                <strong>0</strong>
+                                                <span>Completed Today</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-order">
+                                            <a class="button-gray ui-corner-all" href="#">
+                                                <strong>20</strong>
+                                                <span>Orders Yesterday</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-order">
+                                            <a class="button-green ui-corner-all" href="#">
+                                                <strong>20</strong>
+                                                <span>Completed Yesterday</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-order">
+                                            <a class="button-gray ui-corner-all" href="#">
+                                                <strong>120</strong>
+                                                <span>MTD Total</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-order">
+                                            <a class="button-gray ui-corner-all" href="#">
+                                                <strong>600</strong>
+                                                <span>YTD Total</span>
+                                            </a>
+                                        </li>
+                                    <!--</ul>
+                                    <ul class="display-inline dash-stats">-->
+                                        <li class="dash-stat">
+                                            <a class="button-green ui-corner-all" href="#">
+                                                <strong>5</strong>
+                                                <span>Active Clients</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-stat">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>3</strong>
+                                                <span>Unpaid Invoices</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-stat">
+                                            <a class="button-red ui-corner-all" href="#">
+                                                <strong>3</strong>
+                                                <span>Overdue Invoices</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-stat">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>0</strong>
+                                                <span>Pending Transfer Domains</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-stat">
+                                            <a class="button-red ui-corner-all" href="#">
+                                                <strong>1</strong>
+                                                <span>Suspended Services</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-stat">
+                                            <a class="button-blue ui-corner-all" href="#">
+                                                <strong>0</strong>
+                                                <span>Uninvoiced Billable Items</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-stat">
+                                            <a class="button-green ui-corner-all" href="#">
+                                                <strong>0</strong>
+                                                <span>Valid Quotes</span>
+                                            </a>
+                                        </li>
+                                    <!--</ul>
+                                    <ul class="display-inline dash-tickets">-->
+                                        <li class="dash-ticket">
+                                            <a class="button-green ui-corner-all" href="#">
+                                                <strong>5</strong>
+                                                <span>Tickets New</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-ticket">
+                                            <a class="button-red ui-corner-all" href="#">
+                                                <strong>5</strong>
+                                                <span>Tickets Priority</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-ticket">
+                                            <a class="button-green ui-corner-all" href="#">
+                                                <strong>5</strong>
+                                                <span>Tickets Active</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-ticket">
+                                            <a class="button-gray ui-corner-all">
+                                                <strong>70</strong>
+                                                <span>Tickets Resolved</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-ticket">
+                                            <a class="button-gray ui-corner-all" href="#">
+                                                <strong>104</strong>
+                                                <span>Tickets Closed</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-ticket">
+                                            <a class="button-blue ui-corner-all" href="#">
+                                                <strong>22</strong>
+                                                <span>Tickets Escalated</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-ticket">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>0</strong>
+                                                <span>Tickets Reopened</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="dash-alert">
+                                            <a class="button-green ui-corner-all" href="#">
+                                                <strong>Up</strong>
+                                                <span>Up after 1 hr of downtime</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="dash-alert">
+                                            <a class="button-red ui-corner-all" href="#">
+                                                <strong>Down</strong>
+                                                <span>Down for 30 minutes</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="dash-todo">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>03/08/2011</strong>
+                                                <span>Manual Domain Renewal</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-todo">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>08/03/2011</strong>
+                                                <span>Manual Domain Transfer</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-todo">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>01/04/2011</strong>
+                                                <span>Manual Domain Renewal</span>
+                                            </a>
+                                        </li>
+                                        <li class="dash-todo">
+                                            <a class="button-orange ui-corner-all" href="#">
+                                                <strong>03/04/2011</strong>
+                                                <span>Manual Domain Renewal</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="grid_6 leading">
+                                <div class="ui-widget message info closeable">
+                                    <div class="ui-state-highlight ui-corner-all"> 
+                                        <p>
+                                            <span class="ui-icon ui-icon-info"></span>
+                                            <strong>Manual Sortable Widgets</strong> This a manually sortable widgets dashboard sample. They can also be collapsed/expanded and they can remember their state and position.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="sortable leading clearfix">
+                                <div class="grid_2 portlet collapsible" id="widget-orders" draggable="true">
+                                    <header>
+                                        <h2>Orders</h2>
+                                    </header>
+                                    <section class="no-padding">
+                                        <table class="full">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Orders Today</td>
+                                                    <td class="ar">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pending Today</td>
+                                                    <td class="ar">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Completed Today</td>
+                                                    <td class="ar">0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Orders Yesterday</td>
+                                                    <td class="ar">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Completed Yesterday</td>
+                                                    <td class="ar">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Month to Date Total</td>
+                                                    <td class="ar">120</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Year to Date Total</td>
+                                                    <td class="ar">600</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                                <div class="grid_2 portlet collapsible" id="widget-statistics" draggable="true">
+                                    <header>
+                                        <h2>Statistics</h2>
+                                    </header>
+                                    <section class="no-padding">
+                                        <table class="full">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Active Clients</td>
+                                                    <td class="ar">5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unpaid Invoices</td>
+                                                    <td class="ar">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Overdue Invoices</td>
+                                                    <td class="ar">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pending Transfer Domains</td>
+                                                    <td class="ar">0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Suspended Services</td>
+                                                    <td class="ar">1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Uninvoiced Billable Items</td>
+                                                    <td class="ar">0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Valid Quotes</td>
+                                                    <td class="ar">0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                                <div class="grid_2 portlet collapsible" id="widget-tickets" draggable="true">
+                                    <header>
+                                        <h2>Tickets</h2>
+                                    </header>
+                                    <section class="no-padding">
+                                        <table class="full">
+                                            <tbody>
+                                                <tr>
+                                                    <td>New Tickets</td>
+                                                    <td class="ar">5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Priority Tickets</td>
+                                                    <td class="ar">5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Active Tickets</td>
+                                                    <td class="ar">5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Resolved Tickets</td>
+                                                    <td class="ar">70</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Closed Tickets</td>
+                                                    <td class="ar">104</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Escalated Tickets</td>
+                                                    <td class="ar">22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Reopened Tickets</td>
+                                                    <td class="ar">0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="grid_6 leading">
+                                <div class="ui-widget message info closeable">
+                                    <div class="ui-state-highlight ui-corner-all"> 
+                                        <p>
+                                            <span class="ui-icon ui-icon-info"></span>
+                                            <strong>Static Widgets</strong> This is a static widgets dashboard sample. They can also be collapsed/expanded and they can remember their state.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="grid_6 leading">
+                                <div class="portlet collapsible" id="widget-todolist">
+                                    <header>
+                                        <h2>Todo List</h2>
+                                    </header>
+                                    <section class="no-padding clearfix">
+                                        <table class="full">
+                                            <thead>
+                                                <tr>
+                                                    <th class="ui-state-default">Date</th>
+                                                    <th class="ui-state-default">Title</th>
+                                                    <th class="ui-state-default">Description</th>
+                                                    <th class="ui-state-default">Due Date</th>
+                                                    <th class="ui-state-default">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td>21/11/2010</td><td>Manual Domain Renewal</td><td>Client ID 2 has paid for the renewal of domain domain1.com</td><td class="ac">21/11/2008</td><td class="ac">Pending</td></tr>
+                                                <tr><td>21/09/2010</td><td>Manual Domain Registration</td><td>Client ID 6 has paid for the registration of domain domain2.com and...</td><td class="ac">21/09/2009</td><td class="ac">Pending</td></tr>
+                                                <tr><td>19/10/2010</td><td>Manual Domain Renewal</td><td>Client ID 2 has paid for the renewal of domain domain3.com</td><td class="ac">19/10/2009</td><td class="ac">Pending</td></tr>
+                                                <tr><td>11/08/2011</td><td>Manual Domain Renewal</td><td>Client ID 4 has paid for the renewal of domain domain4.com</td><td class="ac">11/08/2010</td><td class="ac">Pending</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                            </div>
+                            
+                            <div class="grid_6 leading">
+                                <div class="portlet collapsible" id="widget-latestactivity">
+                                    <header>
+                                        <h2>Latest Activity</h2>
+                                    </header>
+                                    <section class="no-padding clearfix">
+                                        <table class="full">
+                                            <thead>
+                                                <tr>
+                                                    <th class="ui-state-default">Date</th>
+                                                    <th class="ui-state-default">Description</th>
+                                                    <th class="ui-state-default">Username</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Completed </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Running Usage Stats Update </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Closing Inactive Support Tickets </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Sending Domain Renewal Notices </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Sending Invoice Reminders </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Credit Card Payments Processed (0 Captured, 0 Failed) </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Credit Card Processing </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Adding Late Fees </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Generating Invoices </td><td>System</td></tr>
+                                                <tr><td>05/03/2011 00:00</td><td>Cron Job: Updating Currency Exchange Rates </td><td>System</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                            </div>
+                            
+                        </section>
+                    </div>
+                </section>

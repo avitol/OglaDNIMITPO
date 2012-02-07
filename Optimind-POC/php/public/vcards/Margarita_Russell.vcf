@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:51:47
+FN:Margarita Russell
+N:Russell;Margarita;;;
+
+ADR;TYPE=home:;;3527 Skinner Hollow Road;Klamath Falls;OR;97601;
+EMAIL;TYPE=internet,pref:MargaritaMRussell@example.com
+TEL;TYPE=home,voice:541-892-1915
+BDAY:1937-4-24
+TZ:-0500
+END:VCARD

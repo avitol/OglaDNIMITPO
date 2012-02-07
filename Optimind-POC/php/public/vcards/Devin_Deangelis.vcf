@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:55
+FN:Devin Deangelis
+N:Deangelis;Devin;;;
+
+ADR;TYPE=home:;;907 Pratt Avenue;Tukwila;WA;98168;
+EMAIL;TYPE=internet,pref:DevinLDeangelis@example.com
+TEL;TYPE=home,voice:360-926-0630
+BDAY:1991-4-9
+TZ:-0500
+END:VCARD

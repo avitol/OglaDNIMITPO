@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:50:41
+FN:Winifred Williams
+N:Williams;Winifred;;;
+
+ADR;TYPE=home:;;4594 Adonais Way;Buford;GA;30518;
+EMAIL;TYPE=internet,pref:WinifredCWilliams@example.com
+TEL;TYPE=home,voice:678-482-8012
+BDAY:1979-11-10
+TZ:-0500
+END:VCARD

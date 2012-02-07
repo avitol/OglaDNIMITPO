@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:51:25
+FN:Wanda Younkin
+N:Younkin;Wanda;;;
+
+ADR;TYPE=home:;;110 Pringle Drive;Chicago;IL;60606;
+EMAIL;TYPE=internet,pref:WandaCYounkin@example.com
+TEL;TYPE=home,voice:312-346-7543
+BDAY:1976-7-13
+TZ:-0500
+END:VCARD

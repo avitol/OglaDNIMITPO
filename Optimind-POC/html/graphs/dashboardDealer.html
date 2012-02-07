@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="SHORTCUT ICON" href="../images/opt-logo.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>OPTIMIND - Marketing Dashboard</title>
+    <link rel="stylesheet" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" media="screen" href="css/grid.css" />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link rel="stylesheet" media="screen" href="css/messages.css" />
+    <link rel="stylesheet" media="screen" href="css/forms.css" />
+    <link rel="stylesheet" media="screen" href="css/tables.css" />
+    <link href="../js/highslide/highslide.css" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+<link rel="stylesheet" media="screen" href="css/ie.css" />
+<![endif]-->
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/PIE.js"></script>
+<script type="text/javascript" src="js/IE9.js"></script>
+<script type="text/javascript" src="js/excanvas.js"></script>
+<![endif]-->
+    <!-- jquerytools -->
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tables.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <!-- THIS SHOULD COME LAST -->
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="js/ie.js"></script>
+<![endif]-->
+    <script type="text/javascript" src="../js/highslide/highslide-full.packed.js"></script>
+    <script type="text/javascript" src="../js/highslide/highslide.config.js"></script>
+    <script type="text/javascript">
+        hs.graphicsDir = '../js/highslide/graphics/';
+        hs.outlineType = 'rounded-white';
+        hs.wrapperClassName = 'draggable-header';
+        hs.minWidth = 850;
+        hs.allowMultipleInstances = false;
+        hs.align = 'center';
+        hs.dimmingOpacity = 0.75;
+        hs.dimmingDuration = 100;
+    </script>
+</head>
+<body style="overflow: hidden;">
+    <div id="wrapper">
+        <div class="container_8 clearfix">
+            <!-- Main Section -->
+            <section class="main-section grid_8">
+                <!-- Statistics Section -->
+                <div class="main-content">
+                    <header>
+                        <ul class="action-buttons clearfix fr">
+                            <li><a href="#" class="button button-gray no-text"><span class="wrench"></span></a>
+                            </li>
+                            <li><a href="../Documentation/index.html" class="button button-gray no-text help" rel="#overlay">
+                                <span class="help"></span></a></li>
+                        </ul>
+                        <h2>Dealer Statistics </h2>
+                    </header>
+                    <section class="container_6 clearfix">
+                        <div class="grid_4 clearfix">
+                            <header class="clearfix">
+                                <ul class="fr action-buttons">
+                                    <li><a href="#" class="current button button-gray no-text" title="Today's Stats"><span
+                                        class="calendar-view-day"></span></a></li>
+                                    <li><a href="#" class="button button-gray no-text" title="Last Month"><span class="calendar-view-week">
+                                    </span></a></li>
+                                    <li><a href="#" class="button button-gray no-text" title="Last 12 Months"><span class="calendar-view-month">
+                                    </span></a></li>
+                                </ul>
+                                <h3>MTD Statistics </h3>
+                            </header>
+                            <section>
+                                <div class="grid_1 alpha">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>Data Quality</h2>
+                                        </header>
+                                        <section>
+                                            <h1>88% </h1>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="grid_1">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>Open Leads </h2>
+                                        </header>
+                                        <section>
+                                            <h1>123 </h1>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="grid_1">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>Avg Open Days </h2>
+                                        </header>
+                                        <section>
+                                            <h1>40.5</h1>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="grid_1 omega">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>MTD Lost Opp. </h2>
+                                        </header>
+                                        <section>
+                                            <h1>77 </h1>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="grid_1 alpha">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>Avg cont./Lead </h2>
+                                        </header>
+                                        <section>
+                                            <h1>4.1 </h1>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="grid_1">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>Avg open days </h2>
+                                        </header>
+                                        <section>
+                                            <h1>37 </h1>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="grid_1">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>Raises per Win </h2>
+                                        </header>
+                                        <section>
+                                            <h1>2.7 </h1>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="grid_1 omega">
+                                    <div class="widget black ac">
+                                        <header>
+                                            <h2>Raises per Lost </h2>
+                                        </header>
+                                        <section>
+                                            <h1>4.1 </h1>
+                                        </section>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Progress Bars -->
+                        <div class="grid_2">
+                            <h3>Month Goals</h3>
+                            <table class="simple full">
+                                <tr>
+                                    <td style="width: 30%">Market Pen. </td>
+                                    <td style="width: 10%" class="ar">5.60% </td>
+                                    <td style="width: 60%">
+                                        <div class="progress progress-red">
+                                            <span style="width: 20%"><b>20%</b></span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>NC Sales </td>
+                                    <td class="ar">120 </td>
+                                    <td>
+                                        <div class="progress progress-orange">
+                                            <span style="width: 40%"><b>40%</b></span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Trans. Ratio </td>
+                                    <td class="ar">45% </td>
+                                    <td>
+                                        <div class="progress progress-blue">
+                                            <span style="width: 60%"><b>60%</b></span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Leads </td>
+                                    <td class="ar">115 </td>
+                                    <td>
+                                        <div class="progress progress-green">
+                                            <span style="width: 80%"><b>80%</b></span></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- End Progress Bars -->
+                    </section>
+                </div>
+                <!-- End Statistics Section -->
+                <!-- Analytics Section -->
+                <div class="main-content">
+                    <header>
+                        <ul class="action-buttons clearfix fr">
+                            <li><a href="#" class="button button-gray no-text"><span class="wrench"></span></a>
+                            </li>
+                            <li><a href="../Documentation/index.html" class="button button-gray no-text help" rel="#overlay">
+                                <span class="help"></span></a></li>
+                        </ul>
+                        <h2>Dealer Analytics </h2>
+                    </header>
+                    <section class="sortable container_6 clearfix">
+                        <div class="grid_2 widget-container" id="sortable-1" draggable="true">
+                            <h2 class="report-icon">Lost Opportunities by Status</h2>
+                            <div class="widget has-details">
+                                <header>
+                                    <ul class="fr action-buttons small">
+                                        <li><a href="#" class="widget-close"><span class="close"></span></a></li>
+                                    </ul>
+                                    <h2><a href="#">Lost Opportunities by Status</a></h2>
+                                </header>
+                                <section>
+                                    <div class="report-preview">
+                                        <a href="Lost-Opportunities-by-Status.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+                                            <img width="100%" height="140px" src="images/graphs/Lost-Opportunities-by-Status.PNG"
+                                                alt="Lost-Opportunities-by-Status" />
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid_2 widget-container" id="sortable-2" draggable="true">
+                            <h2 class="report-icon">Lost Opportunities By Channel</h2>
+                            <div class="widget has-details">
+                                <header>
+                                    <ul class="fr action-buttons small">
+                                        <li><a href="#" class="widget-close"><span class="close"></span></a></li>
+                                    </ul>
+                                    <h2><a href="#">Lost Opportunities By Channel</a></h2>
+                                </header>
+                                <section>
+                                    <div class="report-preview">
+                                        <a href="Lost-Opportunities-by-Channel.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+                                            <img width="100%" height="140px" src="images/graphs/Lost-Opportunities-by-Channel.PNG"
+                                                alt="Lost-Opportunities-by-Channel" />
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid_2 widget-container" id="sortable-3" draggable="true">
+                            <h2 class="report-icon">Sales by Vendor </h2>
+                            <div class="widget has-details">
+                                <header>
+                                    <ul class="fr action-buttons small">
+                                        <li><a href="#" class="widget-close"><span class="close"></span></a></li>
+                                    </ul>
+                                    <h2><a>Sales by Vendor</a></h2>
+                                </header>
+                                <section>
+                                    <div class="report-preview">
+                                        <a href="Sales-by-Vendor.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+                                            <img width="100%" height="140px" src="images/graphs/Sales-by-Vendor.PNG"
+                                                alt="Sales-by-Vendor" />
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid_2 widget-container" id="sortable-4" draggable="true">
+                            <h2 class="report-icon">Top 10 Market Seg. by Profession</h2>
+                            <div class="widget has-details">
+                                <header>
+                                    <ul class="fr action-buttons small">
+                                        <li><a href="#" class="widget-close"><span class="close"></span></a></li>
+                                    </ul>
+                                    <h2><a href="#">Top 10 Market Seg. by Profession</a></h2>
+                                </header>
+                                <section>
+                                    <div class="report-preview">
+                                        <a href="Top-10-Segmentation-by-Profession.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+                                            <img width="100%" height="140px" src="images/graphs/Top-10-Segmentation-by-Profession.PNG"
+                                                alt="Top-10-Segmentation-by-Profession" />
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid_2 widget-container" id="sortable-5" draggable="true">
+                            <h2 class="report-icon">Sales by Month and Objectives</h2>
+                            <div class="widget has-details">
+                                <header>
+                                    <ul class="fr action-buttons small">
+                                        <li><a href="#" class="widget-close"><span class="close"></span></a></li>
+                                    </ul>
+                                    <h2><a href="#">Sales by Month and Objectives</a></h2>
+                                </header>
+                                <section>
+                                    <div class="report-preview">
+                                        <a href="SalesByMonthObjectives.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+                                            <img width="100%" height="140px" src="images/graphs/Sales-by-Month-Objectives.PNG"
+                                                alt="Sales-by-Month-Objectives" />
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid_2 widget-container" id="sortable-6" draggable="true">
+                            <h2 class="report-icon">Sales By sector</h2>
+                            <div class="widget has-details">
+                                <header>
+                                    <ul class="fr action-buttons small">
+                                        <li><a href="#" class="widget-close"><span class="close"></span></a></li>
+                                    </ul>
+                                    <h2><a href="#">Sales By Sector</a></h2>
+                                </header>
+                                <section>
+                                    <div class="report-preview">
+                                        <a href="Sales-by-Sector.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+                                            <img width="100%" height="140px" src="images/graphs/Sales-by-Sector.PNG"
+                                                alt="Sales-by-Sector" />
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- End Analytics Section -->
+            </section>
+            <!-- Main Section End -->
+        </div>
+    </div>
+</body>
+</html>

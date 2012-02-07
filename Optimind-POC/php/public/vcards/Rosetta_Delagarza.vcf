@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:52:33
+FN:Rosetta Delagarza
+N:Delagarza;Rosetta;;;
+
+ADR;TYPE=home:;;1207 University Hill Road;Pleasant Plains;IL;62677;
+EMAIL;TYPE=internet,pref:RosettaHDelagarza@example.com
+TEL;TYPE=home,voice:217-626-0298
+BDAY:1948-2-29
+TZ:-0500
+END:VCARD

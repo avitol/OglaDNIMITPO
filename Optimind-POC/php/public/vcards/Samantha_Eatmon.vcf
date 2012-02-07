@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 04:00:37
+FN:Samantha Eatmon
+N:Eatmon;Samantha;;;
+
+ADR;TYPE=home:;;3441 Goldcliff Circle;Washington;DC;20011;
+EMAIL;TYPE=internet,pref:SamanthaAEatmon@example.com
+TEL;TYPE=home,voice:202-541-0962
+BDAY:1953-9-10
+TZ:-0500
+END:VCARD

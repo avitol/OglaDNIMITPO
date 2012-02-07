@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 05:56:35
+FN:Maximilian Propst
+N:Propst;Maximilian;;;
+
+ADR;TYPE=home:;;3637 Formula Lane;Dallas;TX;75247;
+EMAIL;TYPE=internet,pref:MaximilianPropst@example.com
+TEL;TYPE=home,voice:469-735-3285
+BDAY:1963-4-11
+TZ:-0500
+END:VCARD

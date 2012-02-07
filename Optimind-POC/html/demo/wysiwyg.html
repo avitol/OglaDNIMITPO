@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Optimind - WYSIWYG</title>
+<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:extralight,light,regular,bold" media="screen" rel="stylesheet" type="text/css" >
+<link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/reset.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/grid.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/style.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/elfinder.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/jquery.ui.datatables.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/jquery.slidernav.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/jquery.fullcalendar.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/ui/default-ui/ui.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/ui/default-ui/portlet.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/ui/default-ui/jquery.ui.uniform.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/ui/default-ui/colors/jquery.ui.colors.default.css" media="screen" rel="stylesheet" type="text/css" class="uicolor" >
+<link href="../css/forms.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="../css/prettify.css" media="screen" rel="stylesheet" type="text/css" >
+<!--[if lt IE 8]> <link href="../css/ie.css" media="screen" rel="stylesheet" type="text/css" ><![endif]-->
+<!--[if lt IE 9]> <script type="text/javascript" src="../js/html5.js"></script><![endif]-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.selectors.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/hoverIntent.js"></script>
+<script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="../js/overlay.apple.js"></script>
+<script type="text/javascript" src="../js/jquery.ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../js/jquery.slidernav.js"></script>
+<script type="text/javascript" src="../js/jquery.fullcalendar.min.js"></script>
+<script type="text/javascript" src="../js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="../js/superfish.js"></script>
+<script type="text/javascript" src="../js/supersubs.js"></script>
+<script type="text/javascript" src="../js/elfinder.full.js"></script>
+<script type="text/javascript" src="../js/prettify/prettify.js"></script>
+<script type="text/javascript" src="../js/global.js"></script>
+<!--[if lt IE 9]> <script type="text/javascript" src="../js/selectivizr.js"></script><![endif]-->
+<!--[if lt IE 8]> <script type="text/javascript" src="../js/ie.js"></script><![endif]-->
+
+<script>
+
+	$(function() {
+
+		var availableTags = [
+
+			"ActionScript",
+
+			"AppleScript",
+
+			"Asp",
+
+			"BASIC",
+
+			"C",
+
+			"C++",
+
+			"Clojure",
+
+			"COBOL",
+
+			"ColdFusion",
+
+			"Erlang",
+
+			"Fortran",
+
+			"Groovy",
+
+			"Haskell",
+
+			"Java",
+
+			"JavaScript",
+
+			"Lisp",
+
+			"Perl",
+
+			"PHP",
+
+			"Python",
+
+			"Ruby",
+
+			"Scala",
+
+			"Scheme"
+
+		];
+
+		$( "#quick-search" ).autocomplete({
+
+			source: availableTags
+
+		});
+
+	});
+
+</script>
+
+
+
+<!-- LOADING SCRIPT -->
+
+<script>
+
+$(window).load(function(){
+
+    $("#loading").fadeOut(function(){
+
+        $(this).remove();
+
+        $('body').removeAttr('style');
+
+    });
+
+});
+
+</script>
+
+
+
+<style type = "text/css">
+
+    #container {position: absolute; top:50%; left:50%;}
+
+    #content {width:800px; text-align:center; margin-left: -400px; height:50px; margin-top:-25px; line-height: 50px;}
+
+    #content {font-family: "Helvetica", "Arial", sans-serif; font-size: 18px; color: black; text-shadow: 0px 1px 0px white; }
+
+    #loadinggraphic {margin-right: 0.2em; margin-bottom:-2px;}
+
+    #loading {background-color: #eeeeee; overflow:hidden; width:100%; height:100%; position: absolute; top: 0; left: 0; z-index: 9999;}
+
+</style> 
+
+<!-- LOADING SCRIPT END -->
+
+
+
+</head>
+
+<body style="overflow: hidden;">
+
+
+
+    <div id="loading"> 
+
+        <script type = "text/javascript"> 
+
+            document.write("<div id='container'><p id='content'>" +
+
+                           "<img id='loadinggraphic' width='16' height='16' src='../images/ajax-loader-eeeeee.gif' /> " +
+
+                           "Loading...</p></div>");
+
+        </script> 
+
+    </div> 
+
+    
+
+    <div id="wrapper" class="clearfix">
+
+        <header class="container_8 clearfix">
+
+            <div class="grid_8">
+
+                <h1>OptiMIND</h1>
+
+                <form class="fr">
+
+                    <input id="quick-search" type="text" placeholder="Search..." />
+
+                </form>
+
+                <nav>
+
+                    <ul class="sf-menu clearfix">
+
+                        <li ><a href="../dashboard">Dashboard</a>
+
+                            <ul>
+
+                                <li><a href="../dashboard/activity.html">Activity</a></li>
+
+                                <li><a href="../dashboard/files.html">Files</a></li>
+
+                                <li><a href="../dashboard/calendar.html">Calendar</a></li>
+
+                                <li><a href="../dashboard/contacts.html">Contacts</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="active"><a href="#">Features</a>
+
+                            <ul>
+
+                                <li><a href="wysiwyg.html">WYSIWYG</a></li>
+
+                                <li><a href="forms.html">Forms</a></li>
+
+                                <li><a href="widgets.html">Widgets</a></li>
+
+                                <li><a href="tables.html">Tables</a></li>
+
+                                <li><a href="styles.html">Styles</a></li>
+
+                                <li><a href="navicons.html">Nav Icons</a></li>
+
+                                <li><a href="grid.html">Grid System</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li ><a href="../account/themes.html">Themes</a></li>
+
+                        <li><a href="#">Sample Menu</a>
+
+                            <ul>
+
+                                <li><a href="#">menuitem 1</a></li>
+
+                                <li><a href="#">menuitem 2</a></li>
+
+                                <li><a href="#">menuitem 3</a></li>
+
+                                <li><a href="#">menuitem 4</a></li>
+
+                                <li><a href="#">Sample Submenu</a>
+
+                                    <ul>
+
+                                        <li><a href="#">submenu 1</a></li>
+
+                                        <li><a href="#">submenu 2</a></li>
+
+                                        <li><a href="#">submenu 3</a></li>
+
+                                        <li><a href="#">submenu 4</a></li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="fr"><a href="#" class="arrow-down">administrator</a>
+
+                            <ul>
+
+                                <li><a href="../account">Account</a></li>
+
+                                <li><a href="../account">Users</a></li>
+
+                                <li><a href="../account">Groups</a></li>
+
+                                <li><a href="../account">Help</a></li>
+
+                                <li><a href="../index.html">Sign out</a></li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        
+
+        <section>
+
+            <div class="container_8 clearfix">                
+
+
+
+                <!-- Main Section -->
+
+
+
+<!-- Load TinyMCE -->
+<script type="text/javascript" src="../lib/tiny_mce/jquery.tinymce.js"></script>
+<script type="text/javascript">
+	$().ready(function() {
+		$('textarea.tinymce').tinymce({
+			// Location of TinyMCE script
+			script_url : '../lib/tiny_mce/tiny_mce.js',
+
+			// General options
+			theme : "advanced",
+			plugins : "pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
+
+			// Theme options
+			theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect",
+			theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+			theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
+			theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak",
+			theme_advanced_toolbar_location : "top",
+			theme_advanced_toolbar_align : "left",
+			theme_advanced_statusbar_location : "bottom",
+			theme_advanced_resizing : true,
+
+			// Example content CSS (should be your site CSS)
+			content_css : "css/content.css",
+
+			// Drop lists for link/image/media/template dialogs
+			template_external_list_url : "lists/template_list.js",
+			external_link_list_url : "lists/link_list.js",
+			external_image_list_url : "lists/image_list.js",
+			media_external_list_url : "lists/media_list.js",
+
+			// Replace values for the template plugin
+			template_replace_values : {
+				username : "Some User",
+				staffid : "991234"
+			}
+		});
+	});
+    
+    $(document).ready(function(){
+        $("input[name=showtinymce]").change(function(){
+            if($(this).val()==='1') {
+                $('#elm1').tinymce().show();
+            } else {
+                $('#elm1').tinymce().hide();
+            }
+        });
+    });
+</script>
+<!-- /TinyMCE -->
+
+                <section class="main-section grid_8">
+                    <nav class="collapsed">
+                        <a class="chevron" href="#">&raquo;</a>
+                        <ul>
+                            <li class="current"><a href="wysiwyg.html" class="navicon-folder-open">WYSIWYG</a></li>
+                            <li><a href="forms.html" class="navicon-id-card">Forms</a></li>
+                            <li><a href="widgets.html" class="navicon-window">Widgets</a></li>
+                            <li><a href="tables.html" class="navicon-table">Tables</a></li>
+                            <li><a href="styles.html" class="navicon-palette">Styles</a></li>
+                            <li><a href="navicons.html" class="navicon-photos">Nav Icons</a></li>
+                            <li><a href="grid.html" class="navicon-grid">Grid System</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="main-content">
+                        <header>
+                            <ul class="action-buttons clearfix">
+                                <li><a href="documentation\index.html" class="button help" rel="#overlay" data-icon-primary="ui-icon-help" data-icon-only="true">Help</a></li>
+                            </ul>
+                            <h2>
+                                Full featured TinyMCE example using jQuery plugin
+                            </h2>
+                        </header>
+                        <section class="container_6 clearfix">
+                            <div class="grid_6">
+                                <p>
+                                    This example shows how TinyMCE can be lazy loaded using jQuery. The jQuery plugin will also attach it's self to various jQuery methods to make it more easy to get/set editor contents etc.
+                                </p>
+
+                                <!-- Some integration calls -->
+                                <div class="ac">
+                                    <div class="buttonset">
+                                        <input type="radio" name="showtinymce" value="1" id="show-tinymce" checked /><label for="show-tinymce">Visual</label>
+                                        <input type="radio" name="showtinymce" value="0" id="hide-tinymce" /><label for="hide-tinymce">HTML</label>
+                                        <hr style="margin-top: -13px" />
+                                    </div>
+                                </div>
+                                <!-- Gets replaced with TinyMCE, remember HTML in a textarea should be encoded -->
+                                <div class="leading">
+                                    <textarea id="elm1" name="elm1" rows="15" cols="80" style="width: 100%" class="tinymce">
+                                        &lt;p&gt;
+                                            This is some example text that you can edit inside the &lt;strong&gt;TinyMCE editor&lt;/strong&gt;.
+                                        &lt;/p&gt;
+                                        &lt;p&gt;
+                                        Nam nisi elit, cursus in rhoncus sit amet, pulvinar laoreet leo. Nam sed lectus quam, ut sagittis tellus. Quisque dignissim mauris a augue rutrum tempor. Donec vitae purus nec massa vestibulum ornare sit amet id tellus. Nunc quam mauris, fermentum nec lacinia eget, sollicitudin nec ante. Aliquam molestie volutpat dapibus. Nunc interdum viverra sodales. Morbi laoreet pulvinar gravida. Quisque ut turpis sagittis nunc accumsan vehicula. Duis elementum congue ultrices. Cras faucibus feugiat arcu quis lacinia. In hac habitasse platea dictumst. Pellentesque fermentum magna sit amet tellus varius ullamcorper. Vestibulum at urna augue, eget varius neque. Fusce facilisis venenatis dapibus. Integer non sem at arcu euismod tempor nec sed nisl. Morbi ultricies, mauris ut ultricies adipiscing, felis odio condimentum massa, et luctus est nunc nec eros.
+                                        &lt;/p&gt;
+                                    </textarea>
+                                </div>
+                                
+                                <h3 class="leading">Usage</h3>
+                                <pre class="prettyprint linenums">
+&lt;script type="text/javascript" src="/path/to/lib/tiny_mce/jquery.tinymce.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+	$().ready(function() {
+		$('textarea.tinymce').tinymce({
+			// Location of TinyMCE script
+			script_url : '../lib/tiny_mce/tiny_mce.js',
+
+			// General options
+			theme : "advanced",
+			plugins : "pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
+
+			// Theme options
+			theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect",
+			theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+			theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
+			theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak",
+			theme_advanced_toolbar_location : "top",
+			theme_advanced_toolbar_align : "left",
+			theme_advanced_statusbar_location : "bottom",
+			theme_advanced_resizing : true,
+
+			// Example content CSS (should be your site CSS)
+			content_css : "css/content.css",
+
+			// Drop lists for link/image/media/template dialogs
+			template_external_list_url : "lists/template_list.js",
+			external_link_list_url : "lists/link_list.js",
+			external_image_list_url : "lists/image_list.js",
+			media_external_list_url : "lists/media_list.js",
+
+			// Replace values for the template plugin
+			template_replace_values : {
+				username : "Some User",
+				staffid : "991234"
+			}
+		});
+	});
+&lt;/script&gt;
+                                </pre>
+                            </div>
+                        </section>
+                    </div>
+
+                </section>
+
+<script type="text/javascript">
+if (document.location.protocol == 'file:') {
+	alert("The examples might not work properly on the local file system due to security settings in your browser. Please use a real webserver.");
+}
+</script>
+
+
+                <!-- Main Section End -->
+
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+    
+
+    <footer>
+
+        <div id="footer-inner" class="container_8 clearfix">
+
+            <div class="grid_8">
+
+                <span class="fr"><a href="#">Documentation</a> | <a href="#">Feedback</a></span><a href="#">Details</a> | &copy; 2012. Optimis
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

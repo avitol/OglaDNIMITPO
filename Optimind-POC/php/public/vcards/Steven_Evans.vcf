@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:58:11
+FN:Steven Evans
+N:Evans;Steven;;;
+
+ADR;TYPE=home:;;3510 Davis Place;Ashland;OH;44805;
+EMAIL;TYPE=internet,pref:StevenFEvans@example.com
+TEL;TYPE=home,voice:419-281-5012
+BDAY:1951-7-15
+TZ:-0500
+END:VCARD

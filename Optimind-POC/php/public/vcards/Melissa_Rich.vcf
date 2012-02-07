@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:48
+FN:Melissa Rich
+N:Rich;Melissa;;;
+
+ADR;TYPE=home:;;2826 Burnside Avenue;Park City;UT;84060;
+EMAIL;TYPE=internet,pref:MelissaERich@example.com
+TEL;TYPE=home,voice:435-640-4424
+BDAY:1989-8-27
+TZ:-0500
+END:VCARD

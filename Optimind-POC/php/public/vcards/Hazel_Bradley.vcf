@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:58
+FN:Hazel Bradley
+N:Bradley;Hazel;;;
+
+ADR;TYPE=home:;;2908 Vineyard Drive;Elyria;OH;44052;
+EMAIL;TYPE=internet,pref:HazelSBradley@example.com
+TEL;TYPE=home,voice:440-365-6144
+BDAY:1963-4-10
+TZ:-0500
+END:VCARD

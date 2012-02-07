@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:56:43
+FN:Faith Minder
+N:Minder;Faith;;;
+
+ADR;TYPE=home:;;2416 Rainbow Drive;Mansfield;OH;44907;
+EMAIL;TYPE=internet,pref:FaithWMinder@example.com
+TEL;TYPE=home,voice:330-439-6847
+BDAY:1931-7-26
+TZ:-0500
+END:VCARD

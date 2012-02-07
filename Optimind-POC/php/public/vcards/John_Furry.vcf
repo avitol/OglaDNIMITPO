@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:50:50
+FN:John Furry
+N:Furry;John;;;
+
+ADR;TYPE=home:;;3220 Ryder Avenue;Bothell;WA;98021;
+EMAIL;TYPE=internet,pref:JohnGFurry@example.com
+TEL;TYPE=home,voice:425-288-2714
+BDAY:1971-3-22
+TZ:-0500
+END:VCARD

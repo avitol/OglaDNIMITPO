@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:11
+FN:Theresa Mayne
+N:Mayne;Theresa;;;
+
+ADR;TYPE=home:;;4702 Moore Avenue;Fort Worth;TX;76107;
+EMAIL;TYPE=internet,pref:TheresaGMayne@example.com
+TEL;TYPE=home,voice:817-731-9829
+BDAY:1938-8-17
+TZ:-0500
+END:VCARD

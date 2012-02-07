@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:50:13
+FN:Antonio Wright
+N:Wright;Antonio;;;
+
+ADR;TYPE=home:;;689 Maple Avenue;Kuna;ID;83634;
+EMAIL;TYPE=internet,pref:AntonioAWright@example.com
+TEL;TYPE=home,voice:208-922-3282
+BDAY:1956-3-24
+TZ:-0500
+END:VCARD

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:50
+FN:Kevin Laing
+N:Laing;Kevin;;;
+
+ADR;TYPE=home:;;902 Willis Avenue;Lake Butler;FL;32054;
+EMAIL;TYPE=internet,pref:KevinJLaing@example.com
+TEL;TYPE=home,voice:386-496-6306
+BDAY:1980-2-24
+TZ:-0500
+END:VCARD

@@ -1,0 +1,24 @@
+body {
+    background: #999;
+}
+
+/**
+ * Header
+ */
+#wrapper > header > div, .shortcuts ul li a {
+    background: #e1e1e1;
+    background: -moz-linear-gradient(top,  #fafafa,  #e1e1e1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e1e1e1));
+    -pie-background: linear-gradient(top,  #fafafa,  #e1e1e1);
+}
+
+/**
+ * Main Content
+ */
+.main-content > header {
+    background: #eee;
+    background: -moz-linear-gradient(top,  #fafafa,  #e1e1e1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e1e1e1));
+    -pie-background: linear-gradient(top,  #fafafa,  #e1e1e1);
+    border-bottom: 1px solid #efefef;
+}

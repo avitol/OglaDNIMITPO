@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 05:54:50
+FN:Jonas Ziegler
+N:Ziegler;Jonas;;;
+
+ADR;TYPE=home:;;1403 Bryan Avenue;Saint Paul;MN;55102;
+EMAIL;TYPE=internet,pref:JonasZiegler@example.com
+TEL;TYPE=home,voice:651-290-2562
+BDAY:1946-6-20
+TZ:-0500
+END:VCARD

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:22
+FN:Hattie Mendoza
+N:Mendoza;Hattie;;;
+
+ADR;TYPE=home:;;4860 Hardman Road;Essex Junction;VT;05452;
+EMAIL;TYPE=internet,pref:HattieLMendoza@example.com
+TEL;TYPE=home,voice:802-855-4994
+BDAY:1950-2-9
+TZ:-0500
+END:VCARD

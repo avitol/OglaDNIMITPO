@@ -1,0 +1,137 @@
+﻿{
+"categories": [
+"January",
+"February",
+"March",
+"April",
+"May",
+"June",
+"July",
+"August",
+"September",
+"October"
+],
+"seriesData": [
+{
+"name": "Autre",
+"data": [
+96,
+105,
+63,
+63,
+57,
+78,
+84,
+94,
+91,
+72
+]
+},
+{
+"name": "Concurrence",
+"data": [
+52,
+58,
+48,
+39,
+41,
+43,
+40,
+42,
+41,
+39
+]
+},
+{
+"name": "Concurrence intra marque",
+"data": [
+60,
+69,
+47,
+50,
+48,
+78,
+46,
+57,
+52,
+83
+]
+},
+{
+"name": "Délai de livraison",
+"data": [
+0,
+0,
+14,
+69,
+34,
+26,
+40,
+54,
+52,
+38
+]
+},
+{
+"name": "Non finançable",
+"data": [
+63,
+77,
+61,
+70,
+99,
+89,
+53,
+58,
+57,
+202
+]
+},
+{
+"name": "Remise commerciale",
+"data": [
+72,
+108,
+79,
+95,
+88,
+138,
+115,
+120,
+94,
+88
+]
+},
+{
+"name": "Report d'intention",
+"data": [
+84,
+89,
+74,
+52,
+50,
+57,
+54,
+53,
+61
+]
+},
+{
+"name": "Reprise VO",
+"data": [
+61,
+79,
+59,
+76,
+67,
+135,
+57,
+173,
+60
+]
+}
+],
+ "title": {
+        "text": "Nombre d'opportunites Perdues par Type F OPP - Nombre "
+    }
+}

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:51:31
+FN:Avis Gilbert
+N:Gilbert;Avis;;;
+
+ADR;TYPE=home:;;927 Still Street;Sandusky;OH;44870;
+EMAIL;TYPE=internet,pref:AvisCGilbert@example.com
+TEL;TYPE=home,voice:419-624-2097
+BDAY:1962-7-19
+TZ:-0500
+END:VCARD

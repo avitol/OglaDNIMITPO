@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:53:20
+FN:Charlotte Pullen
+N:Pullen;Charlotte;;;
+
+ADR;TYPE=home:;;244 Beech Street;Antioch;CA;94509;
+EMAIL;TYPE=internet,pref:CharlotteBPullen@example.com
+TEL;TYPE=home,voice:925-706-0021
+BDAY:1940-9-5
+TZ:-0500
+END:VCARD

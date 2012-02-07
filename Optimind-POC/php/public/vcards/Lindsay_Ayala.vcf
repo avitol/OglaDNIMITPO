@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-08 05:48:38
+FN:Lindsay Ayala
+N:Ayala;Lindsay;;;
+
+ADR;TYPE=home:;;Skulevegen 179;YTRE ARNA;;5265;
+EMAIL;TYPE=internet,pref:LindsayRAyala@example.com
+TEL;TYPE=home,voice:952 23 070
+BDAY:1986-9-25
+TZ:-0500
+END:VCARD

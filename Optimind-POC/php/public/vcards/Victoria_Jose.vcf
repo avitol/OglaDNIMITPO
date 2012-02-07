@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:56:03
+FN:Victoria Jose
+N:Jose;Victoria;;;
+
+ADR;TYPE=home:;;4586 Maple Court;Cape Girardeau;MO;63701;
+EMAIL;TYPE=internet,pref:VictoriaRJose@example.com
+TEL;TYPE=home,voice:573-335-9405
+BDAY:1947-6-2
+TZ:-0500
+END:VCARD

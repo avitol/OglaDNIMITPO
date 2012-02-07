@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:50:35
+FN:Catrina Pickett
+N:Pickett;Catrina;;;
+
+ADR;TYPE=home:;;4707 Oakridge Farm Lane;Brookfield;WI;53005;
+EMAIL;TYPE=internet,pref:CatrinaSPickett@example.com
+TEL;TYPE=home,voice:262-402-0753
+BDAY:1964-6-22
+TZ:-0500
+END:VCARD

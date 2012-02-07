@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highstock Example</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $.getJSON('../json/Sales-by-Month-Objectives.json', function (data) {
+                // Create the chart
+                window.chart = new Highcharts.StockChart({
+                    chart: {
+                        renderTo: 'container'
+                    },
+
+                    rangeSelector: {
+                        selected: 5
+                    },
+
+                    title: {
+                        text: 'Sales by Month Objectives'
+                    },
+                    subtitle: {
+                        text: '',
+                        x: -20
+                    },
+                    series: [{
+                        name: 'SMO',
+                        data: data
+                    }],
+
+                    tooltip: {
+                        yDecimals: 2
+                    }
+
+                });
+            });
+
+        });
+
+		</script>
+</head>
+<body>
+    <script src="../Highstock-1.1.2/js/highstock.js" type="text/javascript"></script>
+    <script src="../Highstock-1.1.2/js/modules/exporting.js" type="text/javascript"></script>
+    <div id="container" style="height: 500px; min-width: 500px">
+    </div>
+</body>
+</html>

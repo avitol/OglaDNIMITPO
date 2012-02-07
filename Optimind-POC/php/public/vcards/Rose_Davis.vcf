@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 04:00:30
+FN:Rose Davis
+N:Davis;Rose;;;
+
+ADR;TYPE=home:;;2582 Monroe Avenue;Tampa;FL;33602;
+EMAIL;TYPE=internet,pref:RoseLDavis@example.com
+TEL;TYPE=home,voice:941-677-4649
+BDAY:1987-5-23
+TZ:-0500
+END:VCARD

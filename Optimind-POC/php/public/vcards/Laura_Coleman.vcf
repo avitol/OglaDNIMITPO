@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:53:14
+FN:Laura Coleman
+N:Coleman;Laura;;;
+
+ADR;TYPE=home:;;4816 Peck Street;Manchester;NH;03103;
+EMAIL;TYPE=internet,pref:LauraBColeman@example.com
+TEL;TYPE=home,voice:603-871-5636
+BDAY:1963-10-8
+TZ:-0500
+END:VCARD

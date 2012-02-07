@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:57:50
+FN:Dean Cook
+N:Cook;Dean;;;
+
+ADR;TYPE=home:;;762 Wilson Avenue;Richardson;TX;75081;
+EMAIL;TYPE=internet,pref:DeanACook@example.com
+TEL;TYPE=home,voice:972-454-0701
+BDAY:1949-6-5
+TZ:-0500
+END:VCARD

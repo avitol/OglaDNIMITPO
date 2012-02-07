@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:50:27
+FN:Denise Barrett
+N:Barrett;Denise;;;
+
+ADR;TYPE=home:;;1417 Marcus Street;Birmingham;AL;35203;
+EMAIL;TYPE=internet,pref:DeniseMBarrett@example.com
+TEL;TYPE=home,voice:256-555-5410
+BDAY:1991-2-22
+TZ:-0500
+END:VCARD

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:52:08
+FN:Velma Keeton
+N:Keeton;Velma;;;
+
+ADR;TYPE=home:;;2247 Bryan Street;Lexington;NC;27292;
+EMAIL;TYPE=internet,pref:VelmaJKeeton@example.com
+TEL;TYPE=home,voice:336-250-5380
+BDAY:1991-2-26
+TZ:-0500
+END:VCARD

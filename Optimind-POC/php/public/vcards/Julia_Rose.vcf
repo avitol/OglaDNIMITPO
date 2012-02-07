@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:54:04
+FN:Julia Rose
+N:Rose;Julia;;;
+
+ADR;TYPE=home:;;798 Brooklyn Street;Eugene;OR;97401;
+EMAIL;TYPE=internet,pref:JuliaRRose@example.com
+TEL;TYPE=home,voice:541-244-9530
+BDAY:1958-6-15
+TZ:-0500
+END:VCARD

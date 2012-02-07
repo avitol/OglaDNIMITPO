@@ -1,0 +1,201 @@
+<?php
+$controller = Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
+$action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
+
+$auth = Zend_Auth::getInstance();
+$identity = $auth->getIdentity();
+
+$this->headLink()->appendStylesheet('http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:extralight,light,regular,bold')
+                 ->appendStylesheet('http://fonts.googleapis.com/css?family=PT+Serif+Caption')
+                 ->appendStylesheet($this->baseUrl('css/reset.css'))
+                 ->appendStylesheet($this->baseUrl('css/grid.css'))
+                 ->appendStylesheet($this->baseUrl('css/style.css'))
+                 ->appendStylesheet($this->baseUrl('css/elfinder.css'))
+                 ->appendStylesheet($this->baseUrl('css/jquery.ui.datatables.css'))
+                 ->appendStylesheet($this->baseUrl('css/jquery.slidernav.css'))
+                 ->appendStylesheet($this->baseUrl('css/jquery.fullcalendar.css'))
+                 ->appendStylesheet($this->baseUrl('css/ui/'.THEME.'/ui.css'))
+                 ->appendStylesheet($this->baseUrl('css/ui/'.THEME.'/portlet.css'))
+                 ->appendStylesheet($this->baseUrl('css/ui/'.THEME.'/jquery.ui.uniform.css'))
+                 ->appendStylesheet($this->baseUrl('css/ui/'.THEME.'/colors/jquery.ui.colors.default.css'), array("screen"), NULL, array("class"=>"uicolor"))
+                 ->appendStylesheet($this->baseUrl('css/forms.css'))
+                 ->appendStylesheet($this->baseUrl('css/prettify.css'))
+                 ->appendStylesheet($this->baseUrl('css/ie.css'), "screen", "lt IE 8");
+
+$this->headScript()->appendFile($this->baseUrl('js/html5.js'), "text/javascript", array("conditional" => "lt IE 9"))
+                   ->appendFile($this->baseUrl('js/jquery.min.js'))
+                   ->appendFile($this->baseUrl('js/jquery.selectors.js'))
+                   ->appendFile($this->baseUrl('js/jquery.easing.js'))
+                   ->appendFile($this->baseUrl('js/jquery.cookie.js'))
+                   ->appendFile($this->baseUrl('js/hoverIntent.js'))
+                   ->appendFile($this->baseUrl('js/jquery.tools.min.js'))
+                   ->appendFile($this->baseUrl('js/overlay.apple.js'))
+                   ->appendFile($this->baseUrl('js/jquery.ui.min.js'))
+                   ->appendFile($this->baseUrl('js/jquery.uniform.min.js'))
+                   ->appendFile($this->baseUrl('js/jquery.dataTables.min.js'))
+                   ->appendFile($this->baseUrl('js/jquery.slidernav.js'))
+                   ->appendFile($this->baseUrl('js/jquery.fullcalendar.min.js'))
+                   ->appendFile($this->baseUrl('js/jquery.isotope.min.js'))
+                   ->appendFile($this->baseUrl('js/superfish.js'))
+                   ->appendFile($this->baseUrl('js/supersubs.js'))
+                   ->appendFile($this->baseUrl('js/elfinder.full.js'))
+                   ->appendFile($this->baseUrl('js/prettify/prettify.js'))
+                   ->appendFile($this->baseUrl('js/global.js'))
+                   ->appendFile($this->baseUrl('js/selectivizr.js'), "text/javascript", array("conditional" => "lt IE 9"))
+                   ->appendFile($this->baseUrl('js/ie.js'), "text/javascript", array("conditional" => "lt IE 8"));
+?>
+<?php echo $this->doctype() ?>
+<html lang="en">
+<head>
+<?php
+echo $this->headMeta();
+echo $this->headTitle();
+echo $this->headLink();
+//echo $this->minCss();
+echo $this->headScript();
+?>
+
+<script>
+	$(function() {
+		var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+		];
+		$( "#quick-search" ).autocomplete({
+			source: availableTags
+		});
+	});
+</script>
+
+<!-- LOADING SCRIPT -->
+<script>
+$(window).load(function(){
+    $("#loading").fadeOut(function(){
+        $(this).remove();
+        $('body').removeAttr('style');
+    });
+});
+</script>
+
+<style type = "text/css">
+    #container {position: absolute; top:50%; left:50%;}
+    #content {width:800px; text-align:center; margin-left: -400px; height:50px; margin-top:-25px; line-height: 50px;}
+    #content {font-family: "Helvetica", "Arial", sans-serif; font-size: 18px; color: black; text-shadow: 0px 1px 0px white; }
+    #loadinggraphic {margin-right: 0.2em; margin-bottom:-2px;}
+    #loading {background-color: #eeeeee; overflow:hidden; width:100%; height:100%; position: absolute; top: 0; left: 0; z-index: 9999;}
+</style> 
+<!-- LOADING SCRIPT END -->
+
+</head>
+<body style="overflow: hidden;">
+
+    <div id="loading"> 
+        <script type = "text/javascript"> 
+            document.write("<div id='container'><p id='content'>" +
+                           "<img id='loadinggraphic' width='16' height='16' src='<?=$this->baseUrl('images/ajax-loader-eeeeee.gif')?>' /> " +
+                           "Loading...</p></div>");
+        </script> 
+    </div> 
+    
+    <div id="wrapper" class="clearfix">
+        <header class="container_8 clearfix">
+            <div class="grid_8">
+                <h1>OptiMIND</h1>
+                <form class="fr">
+                    <input id="quick-search" type="text" placeholder="Search..." />
+                </form>
+                <nav>
+                    <ul class="sf-menu clearfix">
+                        <li <?=$controller=='dashboard'? 'class="active"' : ''?>><a href="<?=$this->baseUrl('dashboard')?>">Dashboard</a>
+                            <ul>
+                                <li><a href="<?=$this->baseUrl('dashboard/activity')?>">Activity</a></li>
+                                <li><a href="<?=$this->baseUrl('dashboard/files')?>">Files</a></li>
+                                <li><a href="<?=$this->baseUrl('dashboard/calendar')?>">Calendar</a></li>
+                                <li><a href="<?=$this->baseUrl('dashboard/contacts')?>">Contacts</a></li>
+                            </ul>
+                        </li>
+                        <li <?=$controller=='demo'? 'class="active"' : ''?>><a href="#">Features</a>
+                            <ul>
+                                <li><a href="<?=$this->baseUrl('demo/wysiwyg')?>">WYSIWYG</a></li>
+                                <li><a href="<?=$this->baseUrl('demo/forms')?>">Forms</a></li>
+                                <li><a href="<?=$this->baseUrl('demo/widgets')?>">Widgets</a></li>
+                                <li><a href="<?=$this->baseUrl('demo/tables')?>">Tables</a></li>
+                                <li><a href="<?=$this->baseUrl('demo/styles')?>">Styles</a></li>
+                                <li><a href="<?=$this->baseUrl('demo/navicons')?>">Nav Icons</a></li>
+                                <li><a href="<?=$this->baseUrl('demo/grid')?>">Grid System</a></li>
+                            </ul>
+                        </li>
+                        <li <?=$controller=='account'? 'class="active"' : ''?>><a href="<?=$this->baseUrl('account/themes')?>">Themes</a></li>
+                        <li><a href="#">Sample Menu</a>
+                            <ul>
+                                <li><a href="#">menuitem 1</a></li>
+                                <li><a href="#">menuitem 2</a></li>
+                                <li><a href="#">menuitem 3</a></li>
+                                <li><a href="#">menuitem 4</a></li>
+                                <li><a href="#">Sample Submenu</a>
+                                    <ul>
+                                        <li><a href="#">submenu 1</a></li>
+                                        <li><a href="#">submenu 2</a></li>
+                                        <li><a href="#">submenu 3</a></li>
+                                        <li><a href="#">submenu 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fr"><a href="#" class="arrow-down"><?=$identity['username']?></a>
+                            <ul>
+                                <li><a href="<?=$this->baseUrl('account')?>">Account</a></li>
+                                <li><a href="<?=$this->baseUrl('account')?>">Users</a></li>
+                                <li><a href="<?=$this->baseUrl('account')?>">Groups</a></li>
+                                <li><a href="<?=$this->baseUrl('account')?>">Help</a></li>
+                                <li><a href="<?=$this->baseUrl('logout')?>">Sign out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <div class="container_8 clearfix">                
+
+                <!-- Main Section -->
+
+<?php echo $this->layout()->content; ?>
+
+                <!-- Main Section End -->
+
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div id="footer-inner" class="container_8 clearfix">
+            <div class="grid_8">
+                <span class="fr"><a href="#">Documentation</a> | <a href="#">Feedback</a></span><a href="#">Details</a> | &copy; <?=date('Y')?>. All rights reserved. OPTIMIS
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

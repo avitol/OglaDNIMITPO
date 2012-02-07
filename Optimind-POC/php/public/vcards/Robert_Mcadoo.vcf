@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:53:51
+FN:Robert Mcadoo
+N:Mcadoo;Robert;;;
+
+ADR;TYPE=home:;;4444 Point Street;Chicago;IL;60606;
+EMAIL;TYPE=internet,pref:RobertBMcadoo@example.com
+TEL;TYPE=home,voice:773-831-2032
+BDAY:1989-3-13
+TZ:-0500
+END:VCARD

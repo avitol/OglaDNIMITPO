@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="SHORTCUT ICON" href="../images/opt-logo.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Optimind - Dashboard</title>
+    <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:extralight,light,regular,bold"
+        media="screen" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption" media="screen"
+        rel="stylesheet" type="text/css">
+    <link href="../css/reset.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/grid.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/elfinder.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.ui.datatables.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.slidernav.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.fullcalendar.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/ui/default-ui/ui.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/ui/default-ui/portlet.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/ui/default-ui/jquery.ui.uniform.css" media="screen" rel="stylesheet"
+        type="text/css">
+    <link href="../css/ui/default-ui/colors/jquery.ui.colors.default.css" media="screen"
+        rel="stylesheet" type="text/css" class="uicolor">
+    <link href="../css/forms.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/prettify.css" media="screen" rel="stylesheet" type="text/css">
+    <!--[if lt IE 8]> <link href="../css/ie.css" media="screen" rel="stylesheet" type="text/css" ><![endif]-->
+    <!--[if lt IE 9]> <script type="text/javascript" src="../js/html5.js"></script><![endif]-->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.selectors.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/hoverIntent.js"></script>
+    <script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="../js/overlay.apple.js"></script>
+    <script type="text/javascript" src="../js/jquery.ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.slidernav.js"></script>
+    <script type="text/javascript" src="../js/jquery.fullcalendar.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="../js/superfish.js"></script>
+    <script type="text/javascript" src="../js/supersubs.js"></script>
+    <script type="text/javascript" src="../js/elfinder.full.js"></script>
+    <script type="text/javascript" src="../js/prettify\prettify.js"></script>
+    <script type="text/javascript" src="../js/global.js"></script>
+    <!--[if lt IE 9]> <script type="text/javascript" src="../js/selectivizr.js"></script><![endif]-->
+    <!--[if lt IE 8]> <script type="text/javascript" src="../js/ie.js"></script><![endif]-->
+    <script>
+
+        $(function () {
+
+            var availableTags = [
+
+			"ActionScript",
+
+			"AppleScript",
+
+			"Asp",
+
+			"BASIC",
+
+			"C",
+
+			"C++",
+
+			"Clojure",
+
+			"COBOL",
+
+			"ColdFusion",
+
+			"Erlang",
+
+			"Fortran",
+
+			"Groovy",
+
+			"Haskell",
+
+			"Java",
+
+			"JavaScript",
+
+			"Lisp",
+
+			"Perl",
+
+			"PHP",
+
+			"Python",
+
+			"Ruby",
+
+			"Scala",
+
+			"Scheme"
+
+		];
+
+            $("#quick-search").autocomplete({
+
+                source: availableTags
+
+            });
+
+        });
+
+    </script>
+    <!-- LOADING SCRIPT -->
+    <script>
+
+        $(window).load(function () {
+
+            $("#loading").fadeOut(function () {
+
+                $(this).remove();
+
+                $('body').removeAttr('style');
+
+            });
+
+        });
+
+    </script>
+    <style type="text/css">
+        #container
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        
+        #content
+        {
+            width: 800px;
+            text-align: center;
+            margin-left: -400px;
+            height: 50px;
+            margin-top: -25px;
+            line-height: 50px;
+        }
+        
+        #content
+        {
+            font-family: "Helvetica" , "Arial" , sans-serif;
+            font-size: 18px;
+            color: black;
+            text-shadow: 0px 1px 0px white;
+        }
+        
+        #loadinggraphic
+        {
+            margin-right: 0.2em;
+            margin-bottom: -2px;
+        }
+        
+        #loading
+        {
+            background-color: #eeeeee;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+    </style>
+    <!-- LOADING SCRIPT END -->
+</head>
+<body style="overflow: hidden;">
+    <div id="loading">
+        <script type="text/javascript">
+
+            document.write("<div id='container'><p id='content'>" +
+
+                           "<img id='loadinggraphic' width='16' height='16' src='../images/ajax-loader-eeeeee.gif' /> " +
+
+                           "Loading...</p></div>");
+
+        </script>
+    </div>
+    <div id="wrapper" class="clearfix">
+        <header class="container_8 clearfix">
+            <div class="grid_8">
+                <h1>OptiMIND</h1>
+                <form class="fr">
+                <input id="quick-search" type="text" placeholder="Search..." />
+                </form>
+                <nav>
+                    <ul class="sf-menu clearfix">
+                        <li class="active"><a href="../dashboard/index.html">Manufacturer</a>
+                            <ul>
+                                <li><a href="../Highcharts-2.1.9/examples/area-inverted.htm" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">Dashboard</a></li>
+<!--                                <a href="../graphs/dashboardManuf.html">Dashboard</a></li>-->
+                                <li><a href="../dashboard/activity.html">Activity</a></li>
+                                <li><a href="../demo/tables.html">Tables</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../graphs/dashboardDealer.html">Dealer</a>
+                            <ul>
+                                <li><a href="../graphs/dashboardDealer.html">Dashboard</a></li>
+                                <li><a href="../demo/tables.html">Activity</a></li>
+                                <li><a href="../demo/tables.html">Tables</a></li>
+                            </ul>
+                        </li>
+                        <li class="fr"><a href="#" class="arrow-down">administrator</a>
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Groups</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Sign out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="container_8 clearfix">
+                <!-- Main Section -->
+                <script>
+
+                    $(document).ready(function () {
+
+                        $('.isotope-container').isotope({ filter: $('input[name=dashboardview]:checked').val() });
+
+                        $('input[name=dashboardview]').change(function () {
+
+                            var base = this;
+
+                            setTimeout(function () { $('.isotope-container').isotope({ filter: $(base).val() }); }, 500);
+
+                        });
+
+                    });
+
+                </script>
+                <section class="main-section grid_8">
+                    <nav class="collapsed"><a class="chevron" href="#">&raquo;</a>
+                        <ul>
+                            <li class="current"><a href="#" class="navicon-house">Overview</a></li>
+                            <li><a href="../graphs/dashboardManuf.html" class="navicon-ekg">Statistics</a></li>
+                            <li><a href="../demo/tables.html" class="navicon-table">Tables</a></li>
+<!--                            <li><a href="../dashboard/files.html" class="navicon-cabinet">File Manager</a></li>
+                            <li><a href="../dashboard/calendar.html" class="navicon-calendar">Calendar</a></li>
+                            <li><a href="../dashboard/contacts.html#" class="navicon-id-card">Contacts</a></li>-->
+                        </ul>
+                    </nav>
+                    <div class="main-content">
+                        <header>
+                            <ul class="action-buttons clearfix">
+                                <li><a href="/vpanel/account" class="button" data-icon-primary="ui-icon-wrench" data-icon-only="true">
+                                    Options</a></li>
+                                <li><a href="../documentation/index.html" class="button help" rel="#overlay" data-icon-primary="ui-icon-help"
+                                    data-icon-only="true">Help</a></li>
+                            </ul>
+                            <h2>Overview </h2>
+                        </header>
+                        <section class="container_6 clearfix">
+                            <div class="grid_6">
+                                <div class="ui-widget message info closeable">
+                                    <div class="ui-state-highlight ui-corner-all">
+                                        <p><span class="ui-icon ui-icon-info"></span>This is a sortable dashboard example.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid_6 leading">
+                                <fieldset class="fieldset-buttons ui-corner-all">
+                                    <legend class="buttonset-legend"><span id="dashboardview-filter" class="buttonset">
+                                        <input type="radio" name="dashboardview" id="dashboardview-orders" value=".dash-order"
+                                            checked />
+                                        <label for="dashboardview-orders">
+                                            CRM
+                                        </label>
+                                        <input type="radio" name="dashboardview" id="dashboardview-statistics" value=".dash-stat" />
+                                        <label for="dashboardview-statistics">
+                                            NC
+                                        </label>
+                                        <input type="radio" name="dashboardview" id="dashboardview-tickets" value=".dash-ticket" />
+                                        <label for="dashboardview-tickets">
+                                            UC
+                                        </label>
+                                        <input type="radio" name="dashboardview" id="dashboardview-alerts" value=".dash-alert" />
+                                        <label for="dashboardview-alerts">
+                                            Alerts</label>
+                                        <input type="radio" name="dashboardview" id="dashboardview-todo" value=".dash-todo" />
+                                        <label for="dashboardview-todo">
+                                            Todo</label>
+                                        <input type="radio" name="dashboardview" id="dashboardview-all" value="*" />
+                                        <label for="dashboardview-all">
+                                            All</label>
+                                    </span></legend>
+                                    <ul class="isotope-widgets isotope-container">
+                                        <li class="dash-order"><a class="button-gray ui-corner-all" href="#"><strong>128</strong>
+                                            <span>Open Opportunities </span></a></li>
+                                        <li class="dash-order"><a class="button-orange ui-corner-all" href="#"><strong>47% </strong>
+                                            <span>% Trial Lost Opportunities </span></a></li>
+                                        <li class="dash-order"><a class="button-green ui-corner-all" href="#"><strong>37 </strong>
+                                            <span>Avg Open Days Lost Opp. </span></a></li>
+                                        <li class="dash-order"><a class="button-gray ui-corner-all" href="#"><strong>28% </strong>
+                                            <span>Transformation Ratio </span></a></li>
+                                        <li class="dash-order"><a class="button-green ui-corner-all" href="#"><strong>4.5 </strong>
+                                            <span>Avg. Raises Per Lost </span></a></li>
+                                        <li class="dash-order"><a class="button-gray ui-corner-all" href="#"><strong>120</strong>
+                                            <span>Lost MTD Total </span></a></li>
+                                        <li class="dash-order"><a class="button-gray ui-corner-all" href="#"><strong>600</strong>
+                                            <span>Lost YTD Total </span></a></li>
+                                        <!--</ul>
+
+                                    <ul class="display-inline dash-stats">-->
+                                        <li class="dash-stat"><a class="button-green ui-corner-all" href="#"><strong>45 </strong>
+                                            <span>NC Days Supply </span></a></li>
+                                        <li class="dash-stat"><a class="button-orange ui-corner-all" href="#"><strong>13% </strong>
+                                            <span>Gross Profit </span></a></li>
+                                        <li class="dash-stat"><a class="button-red ui-corner-all" href="#"><strong>24% </strong>
+                                            <span>Returning Customers </span></a></li>
+                                        <li class="dash-stat"><a class="button-orange ui-corner-all" href="#"><strong>122 </strong>
+                                            <span>YTD New Customers </span></a></li>
+                                        <li class="dash-stat"><a class="button-red ui-corner-all" href="#"><strong>9 </strong>
+                                            <span>AVG NC Sales per Salesperson </span></a></li>
+                                        <li class="dash-stat"><a class="button-blue ui-corner-all" href="#"><strong>99 </strong>
+                                            <span>MTD Total NC Sales </span></a></li>
+                                        <li class="dash-stat"><a class="button-green ui-corner-all" href="#"><strong>643 </strong>
+                                            <span>YTD Total NC Sales </span></a></li>
+                                        <!--</ul>
+
+                                    <ul class="display-inline dash-tickets">-->
+                                        <li class="dash-ticket"><a class="button-green ui-corner-all" href="#"><strong>3,225</strong>
+                                            <span>UC Stock Value (KEUR) </span></a></li>
+                                        <li class="dash-ticket"><a class="button-red ui-corner-all" href="#"><strong>75 </strong>
+                                            <span>Stock Turn </span></a></li>
+                                        <li class="dash-ticket"><a class="button-green ui-corner-all" href="#"><strong>2% </strong>
+                                            <span>Avg. Discount </span></a></li>
+                                        <li class="dash-ticket"><a class="button-gray ui-corner-all"><strong>670</strong>
+                                            <span>Avg.Reconditionning (KEUR) </span></a></li>
+                                        <li class="dash-ticket"><a class="button-gray ui-corner-all" href="#"><strong>11 </strong>
+                                            <span>AVG UC Sales per Salesperson </span></a></li>
+                                        <li class="dash-ticket"><a class="button-blue ui-corner-all" href="#"><strong>987 </strong>
+                                            <span>MTD Total UC Sales (KEUR)</span></a></li>
+                                        <li class="dash-ticket"><a class="button-orange ui-corner-all" href="#"><strong>1,225 </strong>
+                                            <span>YTD Total UC Sales (KEUR)</span></a></li>
+                                        <li class="dash-alert"><a class="button-green ui-corner-all" href="#"><strong>GOOD</strong>
+                                            <span>Data Consistency </span></a></li>
+                                        <li class="dash-alert"><a class="button-red ui-corner-all" href="#"><strong>BAD</strong>
+                                            <span>Data Quality </span></a></li>
+                                        <li class="dash-todo"><a class="button-orange ui-corner-all" href="#"><strong>18/06/2011 </strong>
+                                            <span>Older UC In stock </span></a></li>
+                                        <li class="dash-todo"><a class="button-orange ui-corner-all" href="#"><strong>08/03/2011</strong>
+                                            <span>Older Open Invoice </span></a></li>
+                                        <li class="dash-todo"><a class="button-orange ui-corner-all" href="#"><strong>01/04/2011</strong>
+                                            <span>Older Repair Order </span></a></li>
+                                        <li class="dash-todo"><a class="button-orange ui-corner-all" href="#"><strong>03/04/2011</strong>
+                                            <span>Last Campaign </span></a></li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="grid_6 leading">
+                                <div class="ui-widget message info closeable">
+                                    <div class="ui-state-highlight ui-corner-all">
+                                        <p><span class="ui-icon ui-icon-info"></span><strong>Manual Sortable Widgets</strong>
+                                            This a manually sortable widgets dashboard sample. They can also be collapsed/expanded
+                                            and they can remember their state and position. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="sortable leading clearfix">
+                                <div class="grid_2 portlet collapsible" id="widget-orders" draggable="true">
+                                    <header>
+                                        <h2>LOSS </h2>
+                                    </header>
+                                    <section class="no-padding">
+                                        <table class="full">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Autre </td>
+                                                    <td class="ar">51% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Concurrence </td>
+                                                    <td class="ar">12% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Concurrence intra marque </td>
+                                                    <td class="ar">5% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Non finançable </td>
+                                                    <td class="ar">0.1% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Remise commerciale </td>
+                                                    <td class="ar">6% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Report d'intention </td>
+                                                    <td class="ar">6% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Reprise VO </td>
+                                                    <td class="ar">15% </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                                <div class="grid_2 portlet collapsible" id="widget-statistics" draggable="true">
+                                    <header>
+                                        <h2>Overall Statistics </h2>
+                                    </header>
+                                    <section class="no-padding">
+                                        <table class="full">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Avg Open Time Win </td>
+                                                    <td class="ar">12.87 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Avg Open Time Lost </td>
+                                                    <td class="ar">51.35 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Open Opportunities </td>
+                                                    <td class="ar">1200 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>New Customers YTD </td>
+                                                    <td class="ar">27 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Market Penetration YTD </td>
+                                                    <td class="ar">12% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sales KEUR YTD </td>
+                                                    <td class="ar">€ 225,000 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nb of NC </td>
+                                                    <td class="ar">12958 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                                <div class="grid_2 portlet collapsible" id="widget-tickets" draggable="true">
+                                    <header>
+                                        <h2>WIN </h2>
+                                    </header>
+                                    <section class="no-padding">
+                                        <table class="full">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cancelled Order </td>
+                                                    <td class="ar">$32,001 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Validated Order </td>
+                                                    <td class="ar">$29,834 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Delivered Order </td>
+                                                    <td class="ar">$28,597 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cancelled Proposal </td>
+                                                    <td class="ar">$30,841 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Validated Proposal </td>
+                                                    <td class="ar">$30,728 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Average Trials </td>
+                                                    <td class="ar">56% </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Avg Nb of actions </td>
+                                                    <td class="ar">3 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="grid_6 leading">
+                                <div class="ui-widget message info closeable">
+                                    <div class="ui-state-highlight ui-corner-all">
+                                        <p><span class="ui-icon ui-icon-info"></span><strong>Static Widgets</strong> This is
+                                            a static widgets dashboard sample. They can also be collapsed/expanded and they
+                                            can remember their state. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <!--<div class="main-content">-->
+                            <div class="grid_6 leading">
+                                <div class="portlet collapsible" id="widget-todolist">
+                                    <header>
+                                        <h2>Todo List</h2>
+                                    </header>
+                                    <section class="no-padding clearfix"></section>
+                                </div>
+                            </div>
+                            <div class="grid_6 leading">
+                                <div class="portlet collapsible" id="widget-latestactivity">
+                                    <header>
+                                        <h2>Latest Activity</h2>
+                                    </header>
+                                    <section class="no-padding clearfix"></section>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!-- Main Section End -->
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div id="footer-inner" class="container_8 clearfix">
+            <div class="grid_8">
+                <span class="fr"><a href="#">Documentation</a> | <a href="#">Feedback</a></span><a
+                    href="#">Details</a> | &copy; 2012. Optimis
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

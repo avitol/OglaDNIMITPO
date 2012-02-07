@@ -1,0 +1,210 @@
+﻿{
+    "data": [
+        {
+            "y": 7314,
+            "color": "colors[0]",
+            "drilldown": {
+                "name": "Autre Channel",
+                "categories": [
+                    "Autres",
+                    "Internet",
+                    "Journaux",
+                    "M.D. Interne",
+                    "Radio",
+                    "Recommandation",
+                    "Véhicule d'expo",
+                    "Unknown"
+                ],
+                "data": [
+                    3137,
+                    420,
+                    354,
+                    1412,
+                    26,
+                    815,
+                    83,
+                    1067
+                ],
+                "color": "colors[0]"
+            }
+        },
+        {
+            "y": 2604,
+            "color": "colors[1]",
+            "drilldown": {
+                "name": "Concurrence Channel",
+                "categories": [
+                    "Autres",
+                    "Internet",
+                    "Journaux",
+                    "M.D. Interne",
+                    "Radio",
+                    "Recommandation",
+                    "Véhicule d'expo",
+                    "Unknown"
+                ],
+                "data": [
+                    1094,
+                    150,
+                    147,
+                    427,
+                    14,
+                    291,
+                    17,
+                    464
+                ],
+                "color": "colors[1]"
+            }
+        },
+        {
+            "y": 708,
+            "color": "colors[2]",
+            "drilldown": {
+                "name": "Concurrence intra marque Channel",
+                "categories": [
+                    "Autres",
+                    "Internet",
+                    "Journaux",
+                    "M.D. Interne",
+                    "Radio",
+                    "Recommandation",
+                    "Véhicule d'expo",
+                    "Unknown"
+                ],
+                "data": [
+                    274,
+                    29,
+                    21,
+                    134,
+                    4,
+                    74,
+                    2,
+                    170
+                ],
+                "color": "colors[2]"
+            }
+        },
+        {
+            "y": 819,
+            "color": "colors[3]",
+            "drilldown": {
+                "name": "Non finançable Channel",
+                "categories": [
+                    "Autres",
+                    "Internet",
+                    "Journaux",
+                    "M.D. Interne",
+                    "Radio",
+                    "Recommandation",
+                    "Véhicule d'expo",
+                    "Unknown"
+                ],
+                "data": [
+                    322,
+                    30,
+                    49,
+                    153,
+                    2,
+                    86,
+                    15,
+                    162
+                ],
+                "color": "colors[3]"
+            }
+        },
+       
+        {
+            "y": 591,
+            "color": "colors[5]",
+            "drilldown": {
+                "name": "Report d'intention Channel",
+                "categories": [
+                    "Autres",
+                    "Internet",
+                    "Journaux",
+                    "M.D. Interne",
+                    "Radio",
+                    "Recommandation",
+                    "Véhicule d'expo",
+                    "Unknown"
+                ],
+                "data": [
+                    206,
+                    38,
+                    23,
+                    76,
+                    0,
+                    49,
+                    1,
+                    198
+                ],
+                "color": "colors[5]"
+            }
+        },
+        {
+            "y": 4058,
+            "color": "colors[6]",
+            "drilldown": {
+                "name": "Reprise VO Channel",
+                "categories": [
+                    "Autres",
+                    "Internet",
+                    "Journaux",
+                    "M.D. Interne",
+                    "Radio",
+                    "Recommandation",
+                    "Véhicule d'expo",
+                    "Unknown"
+                ],
+                "data": [
+                    1341,
+                    261,
+                    141,
+                    860,
+                    16,
+                    686,
+                    25,
+                    727
+                ],
+                "color": "colors[6]"
+            }
+        },
+        {
+            "y": 545,
+            "color": "colors[7]",
+            "drilldown": {
+                "name": "Autre Channel",
+                "categories": [
+                    "Autres",
+                    "Internet",
+                    "Journaux",
+                    "M.D. Interne",
+                    "Radio",
+                    "Recommandation",
+                    "Véhicule d'expo",
+                    "Unknown"
+                ],
+                "data": [
+                    220,
+                    20,
+                    28,
+                    68,
+                    1,
+                    65,
+                    5,
+                    138
+                ],
+                "color": "colors[7]"
+            }
+        }
+    ],
+    "categories": [
+        "Autre",
+        "Concurrence",
+        "Concurrence intra marque",
+        "Non finançable",
+        "Remise commerciale",
+        "Report d'intention",
+        "Reprise VO"
+    ]
+}

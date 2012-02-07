@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:58:43
+FN:Sandra Madrid
+N:Madrid;Sandra;;;
+
+ADR;TYPE=home:;;529 Hamilton Drive;Baltimore;MD;21229;
+EMAIL;TYPE=internet,pref:SandraRMadrid@example.com
+TEL;TYPE=home,voice:410-247-5932
+BDAY:1958-3-2
+TZ:-0500
+END:VCARD

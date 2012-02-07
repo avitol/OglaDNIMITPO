@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//class_vcard from TroyWolf.com//NONSGML Version 1//EN
+REV:2011-03-05 03:59:16
+FN:Melody Maus
+N:Maus;Melody;;;
+
+ADR;TYPE=home:;;2028 State Street;Detroit;MI;48201;
+EMAIL;TYPE=internet,pref:MelodyWMaus@example.com
+TEL;TYPE=home,voice:313-993-9834
+BDAY:1931-4-11
+TZ:-0500
+END:VCARD
